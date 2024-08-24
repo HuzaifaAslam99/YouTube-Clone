@@ -390,6 +390,9 @@
 }
 
 @media (max-width: 560px){
+    .videos-box{
+        padding-bottom: 220px;
+    }
     .video2{
         --width: 100vw;
         /* margin-left: 0px;
