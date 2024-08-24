@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (max-width: 600px){
+.home{
+    display: none !important;
+}
+}
+
+body {
+    /* overflow-y: scroll !important; */
+}
+.container{
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important; 
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: var(--scroll-inner-color);
+     cursor: pointer;
+    border-radius: 6px; 
+    border: 3px solid var(--scroll-background-color);
+
+}
+
+.left-new {
+    width: 65vw;
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.right-new {
+    width: 35vw;
+    background-color: blue;
+    height: 100vh;
+    /* overflow-y: auto; */
+}
+
+.package {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+.video-play {
+    width: 100%; /* Ensure the video fills the width of the .package div */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title-info {
+    /* width: 100%; */
+    width: 100%;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+
+.Title {
+    font-size: 20px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+}
+
+.channel-subscribe-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    padding: 10px;
+}
+
+.channel-subscribe {
+    display: flex;
+    align-items: center;
+    width: auto;
+    background-color: rgb(115, 115, 179);
+}
+
+.Channel-Logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+}
+
+.channel-name-subscribers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.Channel-Name {
+    font-size: 20px;
+}
+
+.subscribers {
+    font-size: 15px;
+}
+
+.subscribe {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

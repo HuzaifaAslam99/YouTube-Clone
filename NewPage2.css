@@ -1,0 +1,114 @@
+.right-new {
+    /* background-color: red; */
+    overflow-y: auto;
+
+
+    width: 35vw;
+    padding: 0px 10px 100px 10px;
+    /* padding: 10px 10px 300px 10px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* display: inline-block;
+    vertical-align: top;  */
+}
+
+.right-package {
+    /* width: 28vw; */
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding-bottom: 100px; */
+    /* height: 100%; */
+    /* background-color: blue; */
+    /* overflow-y: auto; */
+
+
+}
+
+.suggestion-content-box {
+    width: 440px;
+
+    /* width: 100%; */
+    /* background-color: green; */
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
+
+.suggestion-thumbnail {
+    width: 170px;
+}
+
+.suggestion-title-info {
+    /* height: 40vh; */
+    /* background-color: red; */
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.suggestion-three-dots {
+    width: 20px;
+    /* height: 20px; */
+    /* color: red; */
+    fill: var(--text-color);
+    /* background-color: aqua; */
+}
+
+.suggestion-title {
+    font-size: 16px;
+    width: 225px;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    /* background-color: bisque; */
+}
+.suggestion-channel-name-view-week{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: blue; */
+}
+.Suggestion-Channel-Logo{
+    display: none;
+}
+.suggestion-channel-name {
+    font-size: 12px;
+    /* background-color: aquamarine; */
+}
+
+.suggestion-view-week {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    /* background-color: blue; */
+}
+
+.suggestion-view {
+    font-size: 10px;
+}
+
+.suggestion-dot {
+    width: 10px;
+    fill: var(--text-color);
+    color: var(--text-color) ;
+    /* background-color: brown; */
+    height: 10px;
+}
+
+.suggestion-weeks {
+    font-size: 10px;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.videos-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    padding: 30px 30px 160px 30px; 
+    /* background-color: green; */
+    gap: 20px;
+}
+.video2{
+    /* width: 410px; */
+        /* --width: 25vw; */
+    --width: 400px;
+    width: var(--width);
+    height: 320px;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    /* background-color: blueviolet; */
+}
+.thumbnail-images{
+    /* --width: 400px; */
+    width: var(--width);
+    height: calc(var(--width)/1.777778);
+}
+.titles-list-box{
+    display: flex;
+    width: var(--width);
+    height: 90px;
+    /* background-color: orange; */
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    /* border: 2px solid green; */
+}
+.titles-list{
+    display: flex;
+    width: var(--width);
+    height: 80px;
+    /* background-color: brown; */
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid black;  */
+}
+.channel-logo-box{
+    width: 43px;
+    height: 43px;
+}
+.channel-logo{
+   width: 40px;
+   border-radius: 50%;
+}
+.three-dots{
+    width: 20px;
+    fill: var(--text-color);
+}
+.title-3{
+    width: 320px;
+    /* height: 60px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    justify-content: space-between;
+    gap: 5px;
+}
+.title{
+    font-size: 17px;
+    font-weight: 700;
+    /* max-height: 40px; */
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    /* background-color: aqua; */
+    /* color: var(--text-color);
+    font-family: "Roboto", sans-serif; */
+    /* font-weight: 500; */
+}
+.channel-name{
+    font-size: 14px;
+    /* background-color: brown; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical; 
+    text-overflow: ellipsis ;
+    /* white-space: nowrap; */
+    width: 100%; /* or a fixed width if necessary */
+    display: block;
+}
+.name-view-week{
+    /* width: 320px; */
+    display: flex ;
+    flex-direction: column;
+    /* background-color: red; */
+    justify-content: space-around;
+    height: 35px;
+    gap: 3px;
+}
+.view-week{
+display: flex;
+gap: 4px;
+/* background-color: aqua; */
+align-items: center;
+height: 15px;
+}
+.view{
+    font-size: 13px;
+}
+.dot{
+    width: 10px;
+    fill: var(--text-color);
+}
+.weeks{
+    font-size: 13px;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: var(--scroll-inner-color);
+     cursor: pointer;
+    border-radius: 6px; 
+    border: 3px solid var(--scroll-background-color);
+
+}
+
+.menu-bar{
+    display: none;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+}
+.icon-bottom{
+    /* width: 80px; */
+    /* height: 40px; */
+    /* background-color: red; */
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+}
+.word-bottom{
+    font-size: 17px;
+    /* font: 10px; */
+}
+.icon-home-bottom{
+    color: var(--text-color);
+    width: 30px;
+}
+.icon-short-bottom{
+    height: 26px;
+    width: 26px;
+}
+.icon-short-bottom path {
+    fill:  var(--text-color) !important; 
+}
+.icon-subscription-bottom{
+    width: 26px;
+    height: 26px;
+    color: var(--text-color);
+}
+.icon-playlist-bottom{
+    width: 26px;
+    color: var(--text-color);
+}

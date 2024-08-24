@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* :root[data-theme='light']{
+  --background-color: #ffffff;
+  --text-color: #000000;
+} */
+:root{
+  --background-color: #ffffff;
+  /* --background-color: #faf7f7; */
+  --text-color: #000000;
+  --scroll-background-color: rgb(234, 224, 224);
+  --scroll-inner-color: rgb(139, 137, 137);
+  --share-like-background:  rgb(212, 211, 211, 0.4);
+  --subscribe-color: black;
+}
+
+:root[data-theme='dark'] {
+  /* --background-color: #000000; */
+  --background-color: #141010;
+  --text-color: #ffffff;
+  --scroll-background-color: rgb(52, 51, 51);
+  --scroll-inner-color: rgb(95, 93, 93);
+  --share-like-background:  rgb(93, 91, 91, 0.4);
+  --subscribe-color: #e9e7e7;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+.home{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    /* background-color: var( --background-color); */
+}
+
+.yt-hamburger{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.cross-icon{
+  /* width: 30px;
+  margin: auto 22px; */
+  width: 35px;
+  margin: auto 25px;
+  color:var(--text-color);
+  cursor: pointer;
+  display: none;
+}
+.hamburger{
+    color:var(--text-color);
+    /* fill: var(--text-color); */
+    /* background-color: var(--text-color); */
+    width: 40px;
+    /* height: 60px; */
+    margin: auto 27px;
+    /* cursor: not-allowed; */
+    /* opacity: 0.5; */
+    pointer-events: none;
+}
+/* .hamburger:hover{
+   
+} */
+.full-yt{
+    /* background-color: pink; */
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.youtube{
+    --width : 35px;
+    width: var(--width);
+    height: calc(var(--width)/1.423);
+}
+.mask {
+  background-color: white;
+  width: calc(var(--width)/2.1428);
+  height: calc(var(--width)/2.5);
+  position:relative;
+  bottom: calc(var(--width)/1.5789);
+  left: calc(var(--width)/3.75);
+  }
+.youtube-logo{
+    width: var(--width);
+    position:relative;
+    z-index: 1;
+}
+.yt-word{
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.search-input{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input{
+    background-color: var(--text-color);
+    border-radius: 30px;
+    width: 500px;
+    height: 40px;
+    opacity: 0.4;
+    border: 1px solid white;
+    padding-left: 20px;
+    font-size: 15px;
+    /* color:var(--text-color); */
+    color:var(--background-color);
+}
+.input::placeholder{
+    color:var(--background-color);
+}
+.mic{
+    width: 30px;
+    color:var(--text-color);
+    border-radius: 30px;
+}
+.notification-signin{
+    width: 200px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.video{
+    width: 30px;
+    color: var(--text-color);
+}
+.notification{
+    width: 30px;
+    color: var(--text-color);
+}
+.Profile-logo{
+    background-color: rgb(235, 93, 116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+.Profile-logo:hover{
+
+}
+.Search-icon{
+  display: none;
+}
+.container{
+    height: 100%;
+    display: flex;
+}
+.left{
+    overflow-y: auto;
+    position: sticky;
+    width: 15vw;
+    background-color: var(--background-color) ;
+}
+.right{
+    overflow-y: auto;
+}
+.home-shorts{
+    height: 18vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icon-home {
+    width: 24px;
+    fill: var(--text-color); 
+    color:var(--text-color);
+    /* background-color: blue; */
+  }
+  .icon-short{
+    width: 24px;
+    fill: var(--text-color); 
+    color: var(--text-color);  
+    /* background-color: red; */
+  }
+  .icon-subscription{
+    width: 24px;
+    fill: var(--text-color); 
+    color: var(--text-color);
+    /* background-color: blue; */
+  }
+  .icon{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 16px;
+    padding-left: 11px;
+    border-radius: 5px;
+    height: 30px;
+    /* width: 140px; */
+    width: 170px;
+    cursor: pointer;
+  }
+  .word{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+  }
+  .line{
+    background-color: var(--text-color);
+    width: 15vw;
+    height: 1px;
+    margin-left: 20px; 
+    opacity: 0.2;
+  }
+
+  .you{
+    height: 30vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: 10px; */
+  }
+  .icon2{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 16px;
+    padding-left: 11px;
+    border-radius: 5px;
+    height: 30px;
+    width: 170px;
+    /* width: 140px; */
+    cursor: pointer;
+  }
+  .icon2:hover{
+    background-color: grey;
+  }
+  .icon:hover{
+    background-color: grey;
+  }
+  .icon-you{
+    width:24px;
+    color: var(--text-color);
+  }
+  .word2{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+  }
+  .icon-history{
+    width:24px;
+    fill: var(--text-color);
+  }
+  .icon-playlist{
+    width:24px;
+    color: var(--text-color);
+    /* fill: white; */
+  }
+  .explore{
+    /* height: 30vh; */
+    height: 36vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: 10px; */
+  }

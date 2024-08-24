@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <!-- <link rel="stylesheet" href="m.css"> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="home">
+        <!-- <div class="home-first-line"> -->
+        <div class="yt-hamburger">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <svg class="cross-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <!-- <img class="hamburger" src="img/hamburger.svg" alt=""> -->
+            <div class="full-yt">
+                <div class="youtube">
+                    <img class="youtube-logo" src="img/Youtube_logo-removebg-preview.png" alt="">
+                    <div class="mask"></div>
+                </div>
+                <span class="yt-word">Youtube</span>
+            </div>
+        </div>
+        <div class="search-input">
+            <input class="input" type="text" placeholder="Search">
+            <svg class="mic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M12 14c1.656 0 3-1.344 3-3v-4c0-1.656-1.344-3-3-3s-3 1.344-3 3v4c0 1.656 1.344 3 3 3zm5-3c0 2.828-2.172 5-5 5s-5-2.172-5-5h-2c0 3.438 2.531 6.281 5.938 6.906v3.094h2v-3.094c3.406-.625 5.938-3.469 5.938-6.906h-2z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="notification-signin">
+            <svg class="video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path
+                    d="M2 11C2 7.70017 2 6.05025 3.02513 5.02513C4.05025 4 5.70017 4 9 4H10C13.2998 4 14.9497 4 15.9749 5.02513C17 6.05025 17 7.70017 17 11V13C17 16.2998 17 17.9497 15.9749 18.9749C14.9497 20 13.2998 20 10 20H9C5.70017 20 4.05025 20 3.02513 18.9749C2 17.9497 2 16.2998 2 13V11Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path
+                    d="M17 8.90585L17.1259 8.80196C19.2417 7.05623 20.2996 6.18336 21.1498 6.60482C22 7.02628 22 8.42355 22 11.2181V12.7819C22 15.5765 22 16.9737 21.1498 17.3952C20.2996 17.8166 19.2417 16.9438 17.1259 15.198L17 15.0941"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="11.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+
+            <svg class="notification" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path
+                    d="M5.15837 11.491C5.08489 12.887 5.16936 14.373 3.92213 15.3084C3.34164 15.7438 3 16.427 3 17.1527C3 18.1508 3.7818 19 4.8 19H19.2C20.2182 19 21 18.1508 21 17.1527C21 16.427 20.6584 15.7438 20.0779 15.3084C18.8306 14.373 18.9151 12.887 18.8416 11.491C18.6501 7.85223 15.6438 5 12 5C8.35617 5 5.34988 7.85222 5.15837 11.491Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M10.5 3.125C10.5 3.95343 11.1716 5 12 5C12.8284 5 13.5 3.95343 13.5 3.125C13.5 2.29657 12.8284 2 12 2C11.1716 2 10.5 2.29657 10.5 3.125Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path d="M15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="Search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+            <div class="Profile-logo">H</div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="home-shorts">
+
+                <div class="icon">
+                    <svg class="icon-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M7.08848 4.76364L6.08847 5.54453C4.57182 6.72887 3.81348 7.32105 3.40674 8.15601C3 8.99097 3 9.95552 3 11.8846V13.9767C3 17.763 3 19.6562 4.17157 20.8325C5.11466 21.7793 6.52043 21.964 9 22V18.0057C9 17.0738 9 16.6078 9.15224 16.2403C9.35523 15.7502 9.74458 15.3609 10.2346 15.1579C10.6022 15.0057 11.0681 15.0057 12 15.0057C12.9319 15.0057 13.3978 15.0057 13.7654 15.1579C14.2554 15.3609 14.6448 15.7502 14.8478 16.2403C15 16.6078 15 17.0738 15 18.0057V22C17.4796 21.964 18.8853 21.7793 19.8284 20.8325C21 19.6562 21 17.763 21 13.9767V11.8846C21 9.95552 21 8.99097 20.5933 8.15601C20.1865 7.32105 19.4282 6.72887 17.9115 5.54453L16.9115 4.76364C14.5521 2.92121 13.3724 2 12 2C10.6276 2 9.44787 2.92121 7.08848 4.76364Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    <span class="word">Home</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-short" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M 16.75 1 C 16.02 1 15.329609 1.185625 14.724609 1.515625 L 5.2753906 6.4902344 C 3.9253906 7.2002344 3 8.62 3 10.25 C 3 12.345 4.520625 14.085547 6.515625 14.435547 L 5.3359375 14.955078 C 3.9509375 15.660078 3 17.095 3 18.75 C 3 21.095 4.905 23 7.25 23 C 7.985 23 8.6753906 22.814375 9.2753906 22.484375 L 18.589844 17.580078 C 20.014844 16.895078 21 15.435 21 13.75 C 21 11.655 19.479375 9.9144531 17.484375 9.5644531 L 18.664062 9.0449219 C 20.049063 8.3399219 21 6.905 21 5.25 C 21 2.905 19.095 1 16.75 1 z M 10 9 L 15 12 L 10 15 L 10 9 z">
+                        </path>
+                    </svg>
+                    <span class="word">Shorts</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-subscription" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                        viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M29.353,7.264c-0.339-0.891-1.094-1.568-2.02-1.814c-7.396-1.965-15.229-1.965-22.651,0 C3.746,5.696,2.987,6.384,2.65,7.288c-2.253,6.049-2.255,11.596-0.005,17.458c0.341,0.89,1.099,1.566,2.025,1.811 c3.695,0.973,7.497,1.459,11.301,1.459c3.82,0,7.642-0.49,11.358-1.472c0.929-0.246,1.686-0.925,2.025-1.815 C31.596,18.854,31.595,13.141,29.353,7.264z M20.62,16.89c-1.61,1.59-4.27,3.22-6.32,4.01c-0.79,0.31-1.68-0.12-1.87-0.9 c-0.57-2.29-0.57-5.71,0-8c0.19-0.78,1.08-1.21,1.87-0.9c2.05,0.79,4.71,2.42,6.32,4.01C21.13,15.61,21.13,16.39,20.62,16.89z">
+                        </path>
+                    </svg>
+
+                    <span class="word">Subscription</span>
+
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="you">
+                <div class="icon2">
+                    <span class="word2">You</span>
+                    <svg class="icon-you" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-history" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                        clip-rule="evenodd" viewBox="0 0 512 512.584">
+                        <path fill-rule="nonzero"
+                            d="M216.773 155.955c0-10.956 8.883-19.839 19.839-19.839 10.957 0 19.84 8.883 19.84 19.839v120.763l82.657 36.334c10.013 4.409 14.56 16.104 10.151 26.117-4.409 10.014-16.104 14.56-26.117 10.152l-93.509-41.105c-7.514-2.824-12.861-10.077-12.861-18.576V155.955zM9.217 153.551a21.428 21.428 0 01-.832-5.931l.161-73.416c0-11.838 9.597-21.435 21.435-21.435 11.837 0 21.434 9.597 21.434 21.435l-.062 27.86a254.75 254.75 0 0144.093-45.53c16.773-13.472 35.563-25.045 56.182-34.24C216.231-6.518 286.347-6.44 347.474 16.978c61.173 23.435 113.425 70.235 142.233 134.828 28.812 64.598 28.733 134.717 5.313 195.845-22.547 58.856-66.726 109.447-127.57 138.854l-.759.37-.495.24-.265.125a258.922 258.922 0 01-23.987 10.066c-46.959 16.986-97.357 19.764-144.937 8.557-46.364-10.918-90.11-35.071-125.474-72.238-26.203-27.538-45.267-59.347-57.102-93.082A255.833 255.833 0 011.056 232.619c.955-10.564 10.3-18.353 20.863-17.397 10.563.955 18.353 10.299 17.397 20.863-2.812 30.836 1.015 62.169 11.417 91.805 10.047 28.639 26.294 55.709 48.667 79.223 29.987 31.513 67.06 51.99 106.344 61.241 40.482 9.536 83.286 7.197 123.097-7.201 14.161-5.123 28.013-11.813 41.303-20.069a227.878 227.878 0 0036.794-28.486c.446-.422.904-.819 1.378-1.191 22.471-22.072 39.645-48.595 50.703-77.462 19.94-52.041 20.044-111.651-4.408-166.475-24.455-54.83-68.849-94.573-120.844-114.491-52.041-19.937-111.647-20.041-166.475 4.411-17.48 7.796-33.452 17.64-47.747 29.122a215.822 215.822 0 00-37.712 39.038l17.096-.966c11.837-.648 21.963 8.421 22.61 20.258.648 11.837-8.42 21.963-20.258 22.611l-69.723 3.942c-11.018.603-20.551-7.215-22.341-17.844z" />
+                    </svg>
+                    <span class="word">History</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M2.50012 7.5H21.5001" stroke="currentColor" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        <path d="M17.0001 2.5L14.0001 7.5" stroke="currentColor" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        <path d="M10.0001 2.5L7.00012 7.5" stroke="currentColor" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M14.9531 14.8948C14.8016 15.5215 14.0857 15.9644 12.6539 16.8502C11.2697 17.7064 10.5777 18.1346 10.0199 17.9625C9.78934 17.8913 9.57925 17.7562 9.40982 17.57C9 17.1198 9 16.2465 9 14.5C9 12.7535 9 11.8802 9.40982 11.4299C9.57925 11.2438 9.78934 11.1087 10.0199 11.0375C10.5777 10.8654 11.2697 11.2936 12.6539 12.1498C14.0857 13.0356 14.8016 13.4785 14.9531 14.1052C15.0156 14.3639 15.0156 14.6361 14.9531 14.8948Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    <span class="word">Playlists</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span class="word">Watch Later</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-history" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px"
+                        height="24px" fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M1 21h4V9H1v12zM23 10c0-.55-.45-1-1-1h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L15.17 2 7.59 9.59C7.22 9.95 7 10.45 7 11v9c0 .55.45 1 1 1h9c.45 0 .85-.3.96-.73l2.83-9.47c.05-.16.07-.33.07-.5v-1z" />
+                    </svg>
+
+                    <span class="word">Like</span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="explore">
+                <div class="icon2">
+                    <div class="word2">Explore</div>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path
+                            d="M13.8561 22C26.0783 19 19.2338 7 10.9227 2C9.9453 5.5 8.47838 6.5 5.54497 10C1.66121 14.6339 3.5895 20 8.96719 22C8.1524 21 6.04958 18.9008 7.5 16C8 15 9 14 8.5 12C9.47778 12.5 11.5 13 12 15.5C12.8148 14.5 13.6604 12.4 12.8783 10C19 14.5 16.5 19 13.8561 22Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class="word">Trending</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M12.5 3L12.5 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M12.5 17C12.5 19.2091 10.7091 21 8.5 21C6.29086 21 4.5 19.2091 4.5 17C4.5 14.7909 6.29086 13 8.5 13C10.7091 13 12.5 14.7909 12.5 17Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.5 3C16.366 3 19.5 6.13401 19.5 10C18 8.5 14.0556 6.26667 12.5 8.44444"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class="word">Music</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-history" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <g id="b">
+                            <path
+                                d="m350.18 221.99c-.24 0-.48 0-.72 0-15.49.4-27.73 13.3-27.33 28.84.41 15.23 12.88 27.32 28.02 27.32.26 0 .52 0 .78-.01 15.5-.4 27.73-13.3 27.34-28.8-.39-15.26-12.9-27.35-28.08-27.35z" />
+                            <path
+                                d="m396.91 147.2c-.25 0-.5 0-.75 0-15.5.42-27.73 13.3-27.34 28.83.41 15.23 12.9 27.32 28.03 27.32.26 0 .53 0 .8-.01 15.49-.39 27.74-13.3 27.34-28.79-.41-15.26-12.89-27.35-28.08-27.35z" />
+                            <path
+                                d="m511.97 363.87c-1.2-66.8-9.09-134.35-22.03-202.53-10.54-47.37-48.46-89.56-109.05-92.65-1.56-.06-3.08-.1-4.56-.1-40.44 0-50.39 23.26-98.08 23.26-.47 0-.94 0-1.42 0-6.91-.04-13.82-.06-20.73-.06s-13.93.02-20.9.06c-.48 0-.95 0-1.42 0-47.69 0-57.68-23.25-98.08-23.25-1.48 0-3 .03-4.56.1-60.6 3.09-99.7 45.17-109.09 92.65-12.96 68.18-20.85 135.71-22.05 202.51-.29 46.51 45.63 77.45 75.93 79.57 1.23.09 2.45.14 3.67.14 56.81 0 102.1-98.93 136.79-98.94 13.23.08 26.47.12 39.7.12s26.35-.04 39.52-.12c34.69 0 79.96 98.95 136.8 98.95 1.22 0 2.44-.05 3.67-.14 30.29-2.12 77.4-33.27 75.89-79.57zm-78.55 41.67c-.07 0-.13 0-.2.01-.27.02-.54.03-.81.03-5.11 0-12.77-3.83-21.55-10.79-11.7-9.27-23.68-22.49-35.26-35.27-24.65-27.2-47.93-52.88-79.99-52.89-.08 0-.15 0-.23 0-13.04.08-26.26.11-39.3.11s-26.38-.04-39.47-.12c-.08 0-.15 0-.23 0-32.05 0-55.34 25.69-79.99 52.89-11.58 12.78-23.56 25.99-35.26 35.26-8.78 6.96-16.43 10.79-21.54 10.79-.27 0-.54-.01-.8-.03-.07 0-.14-.01-.21-.02-12.44-.87-40.59-17.35-40.58-41.25 1.12-61.94 8.1-125.96 21.33-195.69 3.25-16.26 11.62-31.2 23.6-42.09 13.14-11.95 30.41-18.8 49.94-19.83.96-.04 1.9-.06 2.81-.06 11.51 0 18.31 2.93 29.58 7.79 15.12 6.52 35.82 15.46 68.5 15.46h1.71c6.84-.04 13.77-.06 20.61-.06s13.66.02 20.44.06h1.71c32.68 0 53.38-8.94 68.49-15.46 11.26-4.86 18.06-7.8 29.59-7.8.91 0 1.86.02 2.82.06 44.26 2.34 66.99 33.65 73.58 62.41 13.19 69.65 20.14 133.6 21.25 195.48 0 .19 0 .37.01.56.75 22.95-28.16 39.56-40.57 40.43z" />
+                            <path
+                                d="m190.01 193.68h-28.34v-28.34c0-10.49-8.51-19-19-19s-19 8.51-19 19v28.34h-28.34c-10.49 0-19 8.51-19 19s8.51 19 19 19h28.34v28.34c0 10.49 8.51 19 19 19s19-8.51 19-19v-28.34h28.34c10.49 0 19-8.51 19-19s-8.51-19-19-19z" />
+                        </g>
+                    </svg>
+                    <span class="word">Gaming</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path
+                            d="M20.4999 14V10C20.4999 6.22876 20.4999 4.34315 19.3284 3.17157C18.1568 2 16.2712 2 12.4999 2H11.5C7.72883 2 5.84323 2 4.67166 3.17156C3.50008 4.34312 3.50007 6.22872 3.50004 9.99993L3.5 13.9999C3.49997 17.7712 3.49995 19.6568 4.67153 20.8284C5.8431 22 7.72873 22 11.5 22H12.4999C16.2712 22 18.1568 22 19.3284 20.8284C20.4999 19.6569 20.4999 17.7712 20.4999 14Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 7H16M8 12H16M8 17L12 17" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class="word">News</span>
+                </div>
+
+                <div class="icon">
+                    <svg class="icon-playlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path
+                            d="M12 17C10.3264 17 8.86971 18.265 8.11766 20.1312C7.75846 21.0225 8.27389 22 8.95877 22H15.0412C15.7261 22 16.2415 21.0225 15.8823 20.1312C15.1303 18.265 13.6736 17 12 17Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M18.5 5H19.7022C20.9031 5 21.5035 5 21.8168 5.37736C22.13 5.75472 21.9998 6.32113 21.7393 7.45395L21.3485 9.15307C20.7609 11.7086 18.6109 13.6088 16 14"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M5.5 5H4.29779C3.09692 5 2.49649 5 2.18324 5.37736C1.86999 5.75472 2.00024 6.32113 2.26075 7.45395L2.65148 9.15307C3.23914 11.7086 5.38912 13.6088 8 14"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12 17C15.0208 17 17.565 12.3379 18.3297 5.99089C18.5412 4.23558 18.647 3.35793 18.0868 2.67896C17.5267 2 16.6223 2 14.8134 2H9.18658C7.37775 2 6.47333 2 5.91317 2.67896C5.35301 3.35793 5.45875 4.23558 5.67025 5.99089C6.435 12.3379 8.97923 17 12 17Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+
+                    <span class="word">Sports</span>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+        </div>
+
+        <div class="right">
+
+            <div class="watch-options">
+                <span class="option">All</span>
+                <span class="option">Dramas</span>
+                <span class="option">Sports</span>
+                <span class="option">Movies</span>
+                <span class="option">Cricket</span>
+                <span class="option">Football</span>
+                <span class="option">Web Development</span>
+                <span class="option">Hockey</span>
+                <span class="option">Music</span>
+                <span class="option">Gaming</span>
+                <span class="option">Instagram</span>
+                <span class="option">Javelin Throw</span>
+            </div>
+
+            <div class="videos-box">
+                <div class="video2" video-data="winning moment" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/winning moment.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/icc.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    The Moment England Won the World Cup! | Plus Trophy Lift Celebrations! | ICC Cricket World Cup 2019
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">ICC</span>
+                                    <div class="view-week">
+                                        <span class="view">4.4M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">5 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="video2" video-data="cro vs den" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/croatia vs denmark.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/fifa.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    Croatia v Denmark | 2018 FIFA World Cup | Match Highlights
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">FIFA</span>
+                                    <div class="view-week">
+                                        <span class="view">18M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">6 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="video2" video-data="nadal" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/nadal's record.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/australian-open-tv.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    Record-Breaker: Rafael Nadal Championship Point | Australian Open 2022
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">Australian Open TV</span>
+                                    <div class="view-week">
+                                        <span class="view">478K views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">2 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video2" video-data="neymar" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/neymar fastest goal.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/Olympics.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    Neymar scores fastest goal in Olympic history | Rio 2016 Olympic Games
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">Olympics</span>
+                                    <div class="view-week">
+                                        <span class="view">11M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">8 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video2" video-data="best yorkers" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/best yorkers.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/icc.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    The Best Yorkers of the 2019 CWC! | Unplayable Deliveries | ICC Cricket World Cup 2019
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">ICC</span>
+                                    <div class="view-week">
+                                        <span class="view">25M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">5 years ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video2" video-data="dreamers" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/BTS Dreamers.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/The Vibe Guide.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    BTS Jungkook - Dreamers (Lyrics) FIFA World Cup 2022
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">The Vibe Guide</span>
+                                    <div class="view-week">
+                                        <span class="view">3.8M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">1 year ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video2" video-data="ronaldo" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/ronaldo.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/ur cristiano.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    When I met the most famous Cristiano
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">UR - Cristiano</span>
+                                    <div class="view-week">
+                                        <span class="view">20M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="video2" video-data="arshad nadeem" data-url="NewPage.html">
+                    <img class="thumbnail-images" src="thumbnails/arshad nadeem Gold medal.PNG" alt="">
+                    <div class="titles-list-box">
+                        <div class="titles-list">
+                            <div class="channel-logo-box">
+                                <img class="channel-logo" src="channel-logo/Olympics.jpg" alt="">
+                            </div>
+                            <div class="title-3">
+                                <span class="title">
+                                    Arshad Nadeem 🇵🇰 clinches gold in Men’s Javelin Throw | Paris 2024 Highlights
+                                </span>
+                                <div class="name-view-week">
+                                    <span class="channel-name">Olympics</span>
+                                    <div class="view-week">
+                                        <span class="view">5.2M views</span>
+                                        <svg class="dot" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="4" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="weeks">2 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="three-dots" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="5" r="2.5" />
+                                <circle cx="12" cy="12" r="2.5" />
+                                <circle cx="12" cy="19" r="2.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="menu-bar"></div> -->
+
+                <!-- </div>
+        </div> -->
+
+                <div class="menu-bar">
+                    <div class="icon-bottom">
+                        <svg class="icon-home-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path
+                                d="M7.08848 4.76364L6.08847 5.54453C4.57182 6.72887 3.81348 7.32105 3.40674 8.15601C3 8.99097 3 9.95552 3 11.8846V13.9767C3 17.763 3 19.6562 4.17157 20.8325C5.11466 21.7793 6.52043 21.964 9 22V18.0057C9 17.0738 9 16.6078 9.15224 16.2403C9.35523 15.7502 9.74458 15.3609 10.2346 15.1579C10.6022 15.0057 11.0681 15.0057 12 15.0057C12.9319 15.0057 13.3978 15.0057 13.7654 15.1579C14.2554 15.3609 14.6448 15.7502 14.8478 16.2403C15 16.6078 15 17.0738 15 18.0057V22C17.4796 21.964 18.8853 21.7793 19.8284 20.8325C21 19.6562 21 17.763 21 13.9767V11.8846C21 9.95552 21 8.99097 20.5933 8.15601C20.1865 7.32105 19.4282 6.72887 17.9115 5.54453L16.9115 4.76364C14.5521 2.92121 13.3724 2 12 2C10.6276 2 9.44787 2.92121 7.08848 4.76364Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <span class="word-bottom">Home</span>
+                    </div>
+
+                    <div class="icon-bottom">
+                        <svg class="icon-short-bottom" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256"
+                            viewBox="0 0 256 256" xml:space="preserve" fill="none">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                <path
+                                    d="M 30.063 90 c -6.765 0 -13.323 -3.634 -16.759 -10.009 c -4.669 -8.691 -1.799 -19.627 6.535 -24.901 c 0.049 -0.03 0.099 -0.06 0.15 -0.086 c 0.673 -0.349 1.33 -0.708 1.989 -1.081 c -0.487 -0.279 -0.972 -0.555 -1.464 -0.83 c -5.12 -2.956 -8.263 -7.114 -9.115 -12.038 c -1.115 -6.588 -1.112 -14.914 8.886 -20.927 c 7.687 -4.595 15.564 -9.093 23.183 -13.444 c 2.527 -1.443 5.056 -2.887 7.585 -4.338 c 5.279 -3.008 11.797 -3.129 17.436 -0.329 c 5.692 2.826 9.569 8.152 10.373 14.247 c 1.166 7.769 -2.72 15.545 -9.677 19.315 c -0.449 0.254 -0.885 0.504 -1.313 0.751 c 0.409 0.244 0.816 0.483 1.227 0.715 c 5.715 3.216 9.323 8.684 9.899 14.999 c 0.568 6.244 -1.953 12.194 -6.916 16.325 c -1.584 1.287 -3.325 2.268 -5.008 3.216 c -0.487 0.274 -0.975 0.549 -1.455 0.83 c -7.804 4.547 -17.067 9.922 -26.608 15.32 C 36.162 89.271 33.091 90 30.063 90 z M 21.907 58.516 c -6.513 4.174 -8.746 12.756 -5.08 19.579 c 3.927 7.284 13.009 10.041 20.251 6.138 c 9.485 -5.367 18.734 -10.735 26.526 -15.275 c 0.497 -0.29 1.002 -0.574 1.507 -0.86 c 1.609 -0.906 3.129 -1.762 4.432 -2.821 c 3.918 -3.26 5.918 -7.958 5.472 -12.872 c -0.454 -4.984 -3.326 -9.314 -7.88 -11.877 c -0.734 -0.415 -1.449 -0.845 -2.191 -1.292 c -0.628 -0.378 -1.277 -0.769 -1.975 -1.172 c -0.61 -0.352 -0.99 -0.999 -1.001 -1.704 c -0.01 -0.705 0.352 -1.363 0.951 -1.732 c 1.398 -0.861 2.773 -1.671 4.329 -2.551 c 5.513 -2.987 8.576 -9.111 7.654 -15.256 c -0.635 -4.808 -3.695 -8.99 -8.192 -11.223 c -4.445 -2.207 -9.558 -2.125 -13.671 0.219 c -2.526 1.45 -5.057 2.895 -7.587 4.339 c -7.601 4.341 -15.462 8.83 -23.11 13.401 c -6.346 3.817 -8.376 8.691 -7 16.821 c 0.65 3.762 3.056 6.871 7.149 9.234 c 1.452 0.814 2.868 1.639 4.46 2.583 c 0.606 0.359 0.979 1.011 0.981 1.715 c 0.002 0.705 -0.367 1.359 -0.971 1.721 C 25.216 56.681 23.628 57.622 21.907 58.516 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path
+                                    d="M 36.741 59.95 c -0.345 0 -0.69 -0.089 -0.999 -0.268 c -0.62 -0.357 -1.002 -1.018 -1.002 -1.733 V 32.417 c 0 -0.715 0.381 -1.375 1 -1.732 c 0.619 -0.357 1.382 -0.357 2 0 l 22.085 12.737 c 0.619 0.357 1 1.016 1.001 1.731 c 0.001 0.715 -0.38 1.374 -0.997 1.733 L 37.744 59.681 C 37.433 59.861 37.087 59.95 36.741 59.95 z M 38.741 35.88 V 54.48 l 16.088 -9.321 L 38.741 35.88 z"
+                                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        <span class="word-bottom">Shorts</span>
+                    </div>
+
+                    <div class="icon-bottom">
+                        <svg class="icon-subscription-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24" height="24" color="#000000" fill="none">
+                            <path
+                                d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <span class="word-bottom">Subscriptions</span>
+                    </div>
+
+                    <div class="icon-bottom">
+                        <svg class="icon-playlist-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24" height="24" color="#000000" fill="none">
+                            <path d="M2.50012 7.5H21.5001" stroke="currentColor" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <path d="M17.0001 2.5L14.0001 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <path d="M10.0001 2.5L7.00012 7.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M14.9531 14.8948C14.8016 15.5215 14.0857 15.9644 12.6539 16.8502C11.2697 17.7064 10.5777 18.1346 10.0199 17.9625C9.78934 17.8913 9.57925 17.7562 9.40982 17.57C9 17.1198 9 16.2465 9 14.5C9 12.7535 9 11.8802 9.40982 11.4299C9.57925 11.2438 9.78934 11.1087 10.0199 11.0375C10.5777 10.8654 11.2697 11.2936 12.6539 12.1498C14.0857 13.0356 14.8016 13.4785 14.9531 14.1052C15.0156 14.3639 15.0156 14.6361 14.9531 14.8948Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <span class="word-bottom">Library</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="Newpage.js"></script> -->
+    <!-- <script src="script-check.js"></script> -->
+</body>
+
+</html>
