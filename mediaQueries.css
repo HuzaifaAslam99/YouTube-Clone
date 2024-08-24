@@ -430,8 +430,9 @@
         /* background-color: brown; */
         display: flex;
         /* flex-direction: column; */
-        /* justify-content: center; */
-        justify-content: space-around;
+        justify-content: center;
+        gap: calc(var(--percentage)*5);
+        /* justify-content: space-around; */
     }
     .name-view-week{
         /* background-color: aqua; */
@@ -444,9 +445,10 @@
     .title-3{
         /* background: orange; */
         /* width: calc(var(--percentage)*300); */
-        width: calc(var(--percentage)*310);
-        /* gap: calc(var(--percentage)*5); */
-        gap: 0px;
+        width: calc(var(--percentage)*320);
+        /* gap:  */
+        /* gap: calc(var(--percentage)*50); */
+        /* gap: 0px; */
     }
     .channel-logo-box{
         /* background-color: aqua; */
