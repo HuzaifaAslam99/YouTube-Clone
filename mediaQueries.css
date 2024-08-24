@@ -432,7 +432,7 @@
         /* flex-direction: column; */
         justify-content: center;
         /* margin: 0px calc(var(--percentage)*5); */
-        gap: calc(var(--percentage)*5);
+        gap: calc(var(--percentage)*4);
         /* justify-content: space-around; */
     }
     .name-view-week{
