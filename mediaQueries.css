@@ -392,6 +392,10 @@
         gap: calc(var(--percentage)*10);
         /* background-color: aqua; */
     }
+    .watch-options{
+        /* margin: 0px 0px; */
+        margin-left: 10px;      
+      }
     .home{
         height: 60px;
     }
@@ -519,7 +523,8 @@
 @media (max-width: 330px){
     .watch-options{
         height: 30px;
-        margin: 0px 20px;
+        /* margin: 0px 20px; */
+        margin-left: 5px;
         gap: 8px;
         
       }
