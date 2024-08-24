@@ -583,7 +583,7 @@
     /* background-color: green; */
 }
 .Title{
-    font-size: calc(var(--percentage2)*40);
+    font-size: calc(var(--percentage2)*45);
     /* font-weight: calc(var(--percentage2)*700); */
     font-weight: 600;
     margin: calc(var(--percentage2)*10) 0px;
@@ -740,7 +740,8 @@
     /* width: 80%; */
     width: 100%;
     font-size: calc(var(--pecentage3)*20);
-    font-weight: calc(var(--pecentage3)*1000);
+    /* font-weight: calc(var(--pecentage3)*1000); */
+    font-weight: 600;
     /* background-color: bisque; */
     
 }
