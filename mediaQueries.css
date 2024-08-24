@@ -390,9 +390,9 @@
 }
 
 @media (max-width: 560px){
-    .videos-box{
+    /* .videos-box{
         padding-bottom: 220px;
-    }
+    } */
     .video2{
         --width: 100vw;
         /* margin-left: 0px;
@@ -405,6 +405,8 @@
         height: auto;
         gap: calc(var(--percentage)*10);
         /* background-color: aqua; */
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .watch-options{
         margin: 0px 10px;
@@ -416,6 +418,10 @@
     }
     .videos-box{
         padding-top: 20px; 
+        /* gap: calc(var(--percentage)*0); */
+        /* gap: 5px; */
+
+        /* padding-bottom: 220px; */
         /* gap: 20px; */
         /* gap: calc(var(--percentage)*120); */
     }
@@ -435,7 +441,8 @@
         /* flex-direction: column; */
         justify-content: center;
         /* margin: 0px calc(var(--percentage)*5); */
-        gap: calc(var(--percentage)*4);
+        /* gap: calc(var(--percentage)*4); */
+        /* gap: calc(var(--percentage)*0); */
         /* justify-content: space-around; */
     }
     .name-view-week{
@@ -447,12 +454,14 @@
         font-weight: 600;
     }
     .title-3{
+        /* height: auto; */
+        height: calc(var(--percentage)*60);
         /* background: orange; */
         /* width: calc(var(--percentage)*300); */
         width: calc(var(--percentage)*310);
         /* gap:  */
         /* gap: calc(var(--percentage)*50); */
-        /* gap: 0px; */
+        gap: 0px;
     }
     .channel-logo-box{
         /* background-color: aqua; */
@@ -461,12 +470,14 @@
         /* background-color: blue; */
     }
     .name-view-week{
+        height: auto;
         /* background-color: red; */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         gap: calc(var(--percentage)*20);
+        /* gap: calc(var(--percentage)*0); */
     }
     .channel-name{
         /* background-color: aqua; */
