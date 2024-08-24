@@ -431,6 +431,7 @@
         display: flex;
         /* flex-direction: column; */
         justify-content: center;
+        /* margin: 0px calc(var(--percentage)*5); */
         gap: calc(var(--percentage)*5);
         /* justify-content: space-around; */
     }
@@ -445,7 +446,7 @@
     .title-3{
         /* background: orange; */
         /* width: calc(var(--percentage)*300); */
-        width: calc(var(--percentage)*320);
+        width: calc(var(--percentage)*310);
         /* gap:  */
         /* gap: calc(var(--percentage)*50); */
         /* gap: 0px; */
