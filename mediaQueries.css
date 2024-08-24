@@ -443,7 +443,8 @@
     }
     .title-3{
         /* background: orange; */
-        width: calc(var(--percentage)*300);
+        /* width: calc(var(--percentage)*300); */
+        width: calc(var(--percentage)*320);
         /* gap: calc(var(--percentage)*5); */
         gap: 0px;
     }
