@@ -328,12 +328,15 @@
     width: calc(var(--percentage2)*80);
 }
 .channel-name-subscribers{
-    max-width: calc(var(--width2)/4)
-    /* background-color: blue; */
+    max-width: calc(var(--width2)/8);
+    /* background-color: red; */
+    /* width: auto; */
+
 }
 .channel-img-name-subscribers{
     /* background-color: blue; */
     gap: calc(var(--percentage2)*20);
+    width: auto;
 }
 .Channel-Name{
    font-size: calc(var(--percentage2)*40);
@@ -572,7 +575,8 @@
     /* justify-content: center; */
 }
 .title-info{
-    padding: 0px calc(var(--percentage2)*20)
+    padding: 0px calc(var(--percentage2)*20);
+    /* background-color: green; */
 }
 .Title{
     font-size: calc(var(--percentage2)*40);
@@ -584,6 +588,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    /* background-color: green; */
  }
  .channel-subscribe-download{
     padding: calc(var(--percentage2)*10) 0px;
@@ -596,26 +601,42 @@
     width: calc(var(--percentage2)*80);
 }
 .channel-name-subscribers{
-    max-width: calc(var(--width2)/4)
+    max-width: calc(var(--width2)/4);
     /* background-color: blue; */
+    width: auto;
+    /* display: inline-block;  */
+    /* white-space: nowrap;  */
 }
 .channel-img-name-subscribers{
-    /* background-color: blue; */
+    /* background-color: red; */
     gap: calc(var(--percentage2)*20);
+    /* gap: 0px; */
+    width: auto;
+    /* width: calc(var(--percentage2)*500); */
+    /* display: inline-block; 
+    white-space: nowrap;  */
 }
 .Channel-Name{
    font-size: calc(var(--percentage2)*40);
    /* width: 100%; */
+   /* background-color: orange; */
+   width: auto;
+   display: inline-block; 
+   white-space: nowrap; 
 
 }
 .subscribers{
     font-size: calc(var(--percentage2)*26);
+    /* background-color: aqua; */
+    white-space: nowrap; 
 }
 .subscribe{
    font-size: calc(var(--percentage2)*32);
    padding: calc(var(--percentage2)*20) calc(var(--percentage2)*40);
    border-radius: calc(var(--percentage2)*60);
    font-weight: calc(var(--percentage2)*1000);
+    /* background-color: aqua; */
+
 }
 /* .channel-subscribe-download{
     height: calc(var(--percentage2)*40*2);
