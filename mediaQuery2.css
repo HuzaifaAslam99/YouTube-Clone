@@ -308,7 +308,8 @@
 }
 .Title{
     font-size: calc(var(--percentage2)*40);
-    font-weight: calc(var(--percentage2)*700);
+    /* font-weight: calc(var(--percentage2)*700); */
+    font-weight: 700;
     margin: calc(var(--percentage2)*10) 0px;
 }
 
@@ -549,6 +550,7 @@
     display: flex;
     justify-content: center;
     overflow: visible;
+    /* gap: calc(var(--percentage2)*100); */
     /* margin-top: 20px; */
     /* background-color: brown; */
 }
@@ -575,12 +577,15 @@
     /* justify-content: center; */
 }
 .title-info{
-    padding: 0px calc(var(--percentage2)*20);
+    /* padding: calc(var(--percentage2)*10) calc(var(--percentage2)*20) 0px; */
+    padding: calc(var(--percentage2)*10) calc(var(--percentage2)*20) 0px calc(var(--percentage2)*20);
+
     /* background-color: green; */
 }
 .Title{
     font-size: calc(var(--percentage2)*40);
-    font-weight: calc(var(--percentage2)*700);
+    /* font-weight: calc(var(--percentage2)*700); */
+    font-weight: 600;
     margin: calc(var(--percentage2)*10) 0px;
 }
 
@@ -595,7 +600,8 @@
     height: calc(var(--percentage2)*160);
     display: flex;
     flex-direction: column;
-    gap: calc(var(--percentage2)*40)
+    gap: calc(var(--percentage2)*40);
+    /* background-color: brown; */
  }
  .Channel-Logo{
     width: calc(var(--percentage2)*80);
@@ -646,6 +652,8 @@
     display: flex;
     justify-content: space-between;
     height: calc(var(--percentage2)*80);
+    /* padding-bottom: 30px; */
+    /* height: calc(var(--percentage2)*160); */
 }
 
 .like-dislike{
