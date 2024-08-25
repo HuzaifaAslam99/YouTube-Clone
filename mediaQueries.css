@@ -441,7 +441,7 @@
         /* flex-direction: column; */
         justify-content: center;
         /* margin: 0px calc(var(--percentage)*5); */
-        gap: calc(var(--percentage)*5);
+        gap: calc(var(--percentage)*3);
         /* gap: calc(var(--percentage)*0); */
         /* justify-content: space-around; */
     }
