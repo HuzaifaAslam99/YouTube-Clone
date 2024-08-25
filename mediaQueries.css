@@ -420,8 +420,9 @@
         padding-top: 20px; 
         /* gap: calc(var(--percentage)*0); */
         /* gap: 5px; */
-
-        padding-bottom: 220px;
+        height: auto;
+        /* background-color: blue; */
+        /* padding-bottom: 220px; */
         /* gap: 20px; */
         /* gap: calc(var(--percentage)*120); */
     }
