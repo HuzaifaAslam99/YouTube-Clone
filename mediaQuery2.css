@@ -574,6 +574,7 @@
     align-items: center;
     /* --width3: 95vw; */
     --width3: 100vw;
+    padding-bottom: 10px;
     /* justify-content: center; */
 }
 .title-info{
