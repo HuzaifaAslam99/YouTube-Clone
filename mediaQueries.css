@@ -441,7 +441,7 @@
         /* flex-direction: column; */
         justify-content: center;
         /* margin: 0px calc(var(--percentage)*5); */
-        /* gap: calc(var(--percentage)*4); */
+        gap: calc(var(--percentage)*5);
         /* gap: calc(var(--percentage)*0); */
         /* justify-content: space-around; */
     }
@@ -452,16 +452,17 @@
         /* background-color: green; */
         /* font-size: calc(var(--percentage)*16); */
         font-weight: 600;
+        height: auto;
     }
     .title-3{
-        /* height: auto; */
-        height: calc(var(--percentage)*60);
+        height: auto;
+        /* height: calc(var(--percentage)*60); */
         /* background: orange; */
         /* width: calc(var(--percentage)*300); */
         width: calc(var(--percentage)*310);
         /* gap:  */
-        /* gap: calc(var(--percentage)*50); */
-        gap: 0px;
+        gap: calc(var(--percentage)*5);
+        /* gap: 0px; */
     }
     .channel-logo-box{
         /* background-color: aqua; */
