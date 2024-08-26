@@ -619,7 +619,7 @@ input[type="text"] {
     /* z-index: 1; */
     /* gap: calc(var(--percentage2)*100); */
     /* margin-top: 20px; */
-    /* background-color: var(--background-color); */
+    background-color: var(--background-color);
     /* background-color: red; */
     
 }
@@ -644,6 +644,7 @@ input[type="text"] {
     /* --width3: 95vw; */
     --width3: 100vw;
     padding-bottom: 10px;
+    overflow-y: auto;
     /* justify-content: center; */
 }
 .comments{
