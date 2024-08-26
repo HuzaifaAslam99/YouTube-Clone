@@ -672,14 +672,14 @@ input[type="text"] {
     /* background-color: green; */
 }
 .text{
-    font-size: calc(var(--pecentage2)*8);
+    font-size: calc(var(--pecentage2)*5);
  }
  .text::placeholder{
-     font-size: calc(var(--pecentage2)*8);
+     font-size: calc(var(--pecentage2)*5);
  }
  input[type="text"] {
      /* padding-left: calc(var(--pecentage2)*10); */
-     font-size: calc(var(--pecentage2)*8);
+     font-size: calc(var(--pecentage2)*5);
  }
 .available-comments{
     display: none;
