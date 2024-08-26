@@ -608,10 +608,10 @@ input[type="text"] {
     justify-content: center;
     overflow: visible;
     /* height: auto; */
-    height: 380px;
+    height: 420px;
     position: sticky;
     /* position: fixed; */
-    top: 0;
+    /* top: 0; */
     /* position: relative; */
     /* z-index: 1; */
     /* gap: calc(var(--percentage2)*100); */
