@@ -1,9 +1,20 @@
+const savedTheme = localStorage.getItem('theme');
+document.documentElement.setAttribute('data-theme', savedTheme);
+console.log(savedTheme);
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelector('.Profile-logo');
 
     let currentTheme;
     currentTheme = document.documentElement.getAttribute('data-theme');
+    // if (savedTheme) {
+        // const savedTheme = localStorage.getItem('theme');
+        // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
+        // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
+        // console.log(savedTheme);
+    // }
     if (!currentTheme) {
         currentTheme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
