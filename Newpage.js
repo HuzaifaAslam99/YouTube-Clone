@@ -3,9 +3,30 @@ let tempDiv;
 let id1;
 let arrayID = [];
 
+// window.onload = function() {
+//   const savedTheme = localStorage.getItem('theme');
+//   if (savedTheme) {
+//       document.documentElement.setAttribute('data-theme', savedTheme);
+//       console.log("saved Theme");
+      
+//   }
+// };
+
+
 function Click() {
 
   window.addEventListener('DOMContentLoaded', (event) => {
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        console.log("saved Theme");
+    }
+    else{
+      console.log("not");
+      
+    }
+
     const storedContainer = localStorage.getItem("video");
     console.log(storedContainer);    
     console.log("--------------");
@@ -333,9 +354,9 @@ suggestion_videos.forEach(Clicked => {
             
             // Reload the page to reflect the changes in the stored video
             // window.location.href = window.location.href;
-            // location.reload();
-                const url = Clicked.getAttribute("data-url");
-                window.location.href = url;
+            location.reload();
+                // const url = Clicked.getAttribute("data-url");
+                // window.location.href = url;
           }
         });
       }

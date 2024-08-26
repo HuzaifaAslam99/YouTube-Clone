@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     divs[0].querySelector('.tick').style.visibility = 'visible';
                     divs[1].querySelector('.tick').style.visibility = 'hidden';
                     document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
                 });
             }
     
@@ -147,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     divs[1].querySelector('.tick').style.visibility = 'visible';
                     divs[0].querySelector('.tick').style.visibility = 'hidden';
                     document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
                     // currentTheme = 'light';
 
                 });
