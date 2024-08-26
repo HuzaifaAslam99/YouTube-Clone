@@ -1,70 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root{
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --scroll-background-color: rgb(234, 224, 224);
-    --scroll-inner-color: rgb(139, 137, 137);
-    --share-like-background:  rgb(212, 211, 211, 0.4);
-    --subscribe-color: black;
-  }
-  
-  :root[data-theme='dark'] {
-    --background-color: #141010;
-    --text-color: #ffffff;
-    --scroll-background-color: rgb(52, 51, 51);
-    --scroll-inner-color: rgb(95, 93, 93);
-    --share-like-background:  rgb(93, 91, 91, 0.4);
-    --subscribe-color: #e9e7e7;
-  }
-
-.body{
-  /* height: 100vh !important; */
-  /* overflow: hidden; */
-  /* background-color: var(--background-color);
-  overflow: auto;
-  width: 100vw;
-  height: auto; */
-  /* overflow-y: auto; */
-  /* background-color: blue; */
-
-  /* height: auto; */
-  height: 100vh;
-  width: 100%;
-  /* overflow-y: auto; */
-  overflow: hidden;
-  /* overflow-y: hidden; */
-
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    width: 100%;
+    overflow: auto;
 }
 .container{
-    /* background-color: blue; */
-/* 
-    display: flex;
-    justify-content: center !important; 
-    width: 100vw;
-    overflow: hidden;
-    height: auto ;
-    height: 100vh; */
-    overflow: auto;
-    /* height: auto; */
-
-    /* height: 100vh; */
-    /* height: 100vh; */
-    /* height: 100%; */
+    height: auto;
     width: 100%;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     display: flex;
+    /* background-color: orangered; */
 }
-
-.left-new {
+.left-new{
     width: 65vw;
+    /* height: 1500px; */
+    height: auto;
+    /* background-color: yellow; */
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    height: 150vh;
-    /* height: auto; */
-    /* overflow: hidden; */
 }
+.right-new{
+    width: 35vw;
+    /* min-height: 100%; */
+    /* background-color: blue; */
+    padding: 0px 10px 0px 10px;
+    height: 120vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    /* height: 0px; */
+    /* flex-grow: 1; */
+}
+
 
 
 .package {
@@ -74,7 +47,7 @@
     flex-direction: column;
     padding: 0px 10px 100px 10px;
     /* overflow-y: auto; */
-    /* background-color: red; */
+    background-color: red;
 }
 
 .video-play {
@@ -260,18 +233,20 @@
 }
 
 .comments{
+    /* display: none; */
     width: 100%;
-    height: auto;
-    background-color: rgb(52, 51, 51);
+    /* height: auto; */
+    /* height: 330px; */
+    /* background-color: rgb(52, 51, 51); */
+    /* padding-top: 10px;
     margin-top: 20px;
     border-radius: 30px;
-    padding: 10px 20px 10px 20px;
-    margin-bottom: 30px; 
+    padding-left: 20px;
+    margin-bottom: 30px; ; */
 }
 .heading{
     width: 100%;
     color: var(--text-color);
-    font-size: 18px;
     /* background-color: blue; */
 }
 .input-container{
@@ -284,16 +259,13 @@
    width: 100%;
    background-color: rgb(52, 51, 51, 0);
    border-color: rgb(52, 51, 51, 0) rgb(52, 51, 51, 0) white rgb(52, 51, 51, 0);
-   font-size: 14px;
 }
 .text::placeholder{
     color: var(--text-color);
-    font-size: 14px;
 }
 input[type="text"] {
     color: var(--text-color); 
     padding-left: 10px;
-    font-size: 14px;
 }
 .actions{
     margin-top: 10px;
@@ -307,18 +279,16 @@ input[type="text"] {
    border-radius: 10px;
    padding: 5px;
    cursor: pointer;
-   font-size: 14px;
 }
 .comment{
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
-   font-size: 14px;
 }
 .available-comments{
+    /* background-color: green; */
     width: 100%;
-    word-wrap: break-word;
-    font-size: 14px;
+    height: 80px;
 }
 
 ::-webkit-scrollbar {

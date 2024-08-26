@@ -28,13 +28,13 @@ function Click() {
     }
 
     const storedContainer = localStorage.getItem("video");
-    console.log(storedContainer);    
-    console.log("--------------");
+    // console.log(storedContainer);    
+    // console.log("--------------");
     
     const tempContainer = document.createElement('div');
     tempContainer.innerHTML = storedContainer;
 
-    console.log(tempContainer.innerHTML);
+    // console.log(tempContainer.innerHTML);
 
     parsedElement = tempContainer.firstElementChild;
     // console.log(parsedElement);
@@ -62,6 +62,16 @@ function Click() {
     const wow3 = document.querySelector(".title-info")
     const referenceElement3 = wow3.querySelector(".channel-subscribe-download");
     wow3.insertBefore(channel_title, referenceElement3);
+
+    // let div = document.createElement("div")
+    // div.className = "comments"
+    // const wow4 = document.querySelector(".title-info")
+    // const referenceElement4 = wow3.querySelector(".channel-subscribe-download");
+    // wow4.insertBefore(div, referenceElement4.nextSibling)
+
+    // let package = document.querySelector(".package")
+    // console.log(package.outerHTML);
+    
 
 
     let video_array = [
@@ -212,6 +222,14 @@ function Click() {
         const ReferenceElement6 = parent1.querySelector(".suggestion-title-info")
         parent6.insertBefore(channel_logo, ReferenceElement6)
 
+        // const comments = tempDiv.children[0]
+
+        // console.log("Comments: "+comments)
+
+        // console.log(comments);
+        
+
+
         count++;
         arrayID.push(tempDiv)
         // content.video
@@ -235,27 +253,6 @@ function Click() {
     })
 
 
-    arrayID.forEach(element => {
-      // console.log(element.outerHTML);
-      // console.log(element.getAttribute("video-data"));
-
-    });
-
-    // const suggestion_videos = document.querySelectorAll(".suggestion-content-box");
-
-    //   suggestion_videos.forEach(element => {
-    //       console.log(element);
-
-    // });
-
-    // suggestion_videos.forEach(element => {
-    //   element.addEventListener("click",()=>{
-    //     console.log("Click");
-
-    //   })
-    // });
-
-
   })
 
 
@@ -263,64 +260,6 @@ function Click() {
 Click()
 
 
-
-
-
-// const suggestion_videos = document.querySelectorAll(".suggestion-content-box");
-
-// // const video = document.querySelectorAll(".video2");
-// suggestion_videos.forEach(Clicked => {
-//   Clicked.addEventListener('click', function () {
-
-//     // console.log("--------------");
-//     let tempDivID;
-//     arrayID.forEach(element => {
-//       if (element.id===Clicked.id){
-//         tempDivID = Clicked.id
-//       }
-//     });
-
-    
-//     arrayID.forEach(element2 => {
-//       if (element2.id === tempDivID) {
-//         console.log(tempDivID)
-        
-//         let array = JSON.parse(localStorage.getItem('array'));
-
-//         array.forEach(element3 => {
-//              let video3 = element3.videoData;
-//              let tempDivAtt = element2.getAttribute('video-data');
-//              if (video3===tempDivAtt){
-
-//                 let video = document.createElement('div');
-//                 video.innerHTML = element3.InnerHTML;
-
-//                 video.setAttribute("video-data",video3)
-
-//                 console.log(video.outerHTML)
-//                 localStorage.setItem('video', video);
-//                 // const url = Clicked.getAttribute("data-url");
-//                 // window.location.href = url;
-//                 // Click(storedArray)
-//              } 
-//         });
-
-//       }
-      
-
-//     });
-
-
-//   });
-// });
-
-
-
-
-
-
-
-// Click();
 
 const suggestion_videos = document.querySelectorAll(".suggestion-content-box");
 
@@ -363,3 +302,42 @@ suggestion_videos.forEach(Clicked => {
     });
   });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const inputField = document.querySelector('.text');
+  const cancelButton = document.querySelector('.cancel');
+  const commentButton = document.querySelector('.comment');
+  const availableComments = document.querySelector('.available-comments');
+  
+  // Function to clear the input field
+  function clearComment() {
+      inputField.value = ''; // Clear the input field
+  }
+  
+  // Function to handle adding a comment
+  function addComment() {
+      const comment = inputField.value.trim();
+      if (comment) {
+          // Create a new comment element
+          const commentElement = document.createElement('div');
+          commentElement.classList.add('comment-item');
+          commentElement.textContent = comment;
+          
+          // Append the new comment to the available-comments section
+          availableComments.appendChild(commentElement);
+          
+          // Clear the input field after adding the comment
+          inputField.value = '';
+      } else {
+          console.log('No comment to add.');
+      }
+  }
+  
+  // Add event listeners
+  cancelButton.addEventListener('click', clearComment);
+  commentButton.addEventListener('click', addComment);
+});
+
