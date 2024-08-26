@@ -651,10 +651,10 @@ input[type="text"] {
     /* display: none; */
     margin-top: 40px;
     /* margin-top: calc(var(--percentage2)*80); */
-    padding-top: calc(var(--percentage2)*20);
+    padding-top: calc(var(--percentage2)*10);
     padding-left: calc(var(--percentage2)*20);
     padding-right: calc(var(--percentage2)*20);
-    padding-bottom: calc(var(--percentage2)*20);
+    padding-bottom: calc(var(--percentage2)*10);
 
     border-radius: calc(var(--percentage2)*30);
 
@@ -672,14 +672,14 @@ input[type="text"] {
     /* background-color: green; */
 }
 .text{
-    font-size: calc(var(--pecentage2)*12);
+    font-size: calc(var(--pecentage2)*10);
  }
  .text::placeholder{
-     font-size: calc(var(--pecentage2)*12);
+     font-size: calc(var(--pecentage2)*10);
  }
  input[type="text"] {
      /* padding-left: calc(var(--pecentage2)*10); */
-     font-size: calc(var(--pecentage2)*12);
+     font-size: calc(var(--pecentage2)*10);
  }
 .available-comments{
     display: none;
@@ -691,12 +691,16 @@ input[type="text"] {
     /* background-color: brown; */
 }
 .cancel{
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 5px;
+    font-size: calc(var(--pecentage2)*12);
+
  }
  .comment{
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 5px;
+    font-size: calc(var(--pecentage2)*12);
+
  }
 .title-info{
     /* padding: calc(var(--percentage2)*10) calc(var(--percentage2)*20) 0px; */
