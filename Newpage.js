@@ -333,7 +333,9 @@ suggestion_videos.forEach(Clicked => {
             
             // Reload the page to reflect the changes in the stored video
             // window.location.href = window.location.href;
-            location.reload();
+            // location.reload();
+                const url = Clicked.getAttribute("data-url");
+                window.location.href = url;
           }
         });
       }
