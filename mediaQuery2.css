@@ -608,7 +608,7 @@ input[type="text"] {
     justify-content: center;
     overflow: visible;
     /* height: auto; */
-    height: 420px;
+    height: 605px;
     position: sticky;
     /* position: fixed; */
     /* top: 0; */
@@ -617,6 +617,8 @@ input[type="text"] {
     /* gap: calc(var(--percentage2)*100); */
     /* margin-top: 20px; */
     background-color: var(--background-color);
+    /* background-color: red; */
+    
 }
 
 .package {
@@ -643,7 +645,7 @@ input[type="text"] {
 }
 .comments{
     /* display: none; */
-    margin-top: 30px;
+    margin-top: 40px;
     /* margin-top: calc(var(--percentage2)*80); */
     padding-top: calc(var(--percentage2)*20);
     padding-left: calc(var(--percentage2)*20);
@@ -694,7 +696,7 @@ input[type="text"] {
     padding: calc(var(--percentage2)*10) calc(var(--percentage2)*20) 0px calc(var(--percentage2)*20);
 
     /* background-color: green; */
-    height: 200px;
+    height: 420px;
 }
 .Title{
     font-size: calc(var(--percentage2)*45);
