@@ -234,8 +234,11 @@ video.forEach(element => {
         InnerHTML: element.innerHTML,
         videoData: element.getAttribute("video-data") // Store the attribute value
     });
-    
 });
 
 localStorage.setItem('array',  JSON.stringify(array));
 console.log(array);
+
+
+
+// const storedContainer = localStorage.getItem("suggestion_video");
