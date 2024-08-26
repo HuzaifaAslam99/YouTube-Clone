@@ -672,14 +672,14 @@ input[type="text"] {
     /* background-color: green; */
 }
 .text{
-    font-size: calc(var(--pecentage2)*10);
+    font-size: calc(var(--pecentage2)*8);
  }
  .text::placeholder{
-     font-size: calc(var(--pecentage2)*10);
+     font-size: calc(var(--pecentage2)*8);
  }
  input[type="text"] {
      /* padding-left: calc(var(--pecentage2)*10); */
-     font-size: calc(var(--pecentage2)*10);
+     font-size: calc(var(--pecentage2)*8);
  }
 .available-comments{
     display: none;
@@ -691,15 +691,15 @@ input[type="text"] {
     /* background-color: brown; */
 }
 .cancel{
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 5px;
-    font-size: calc(var(--pecentage2)*12);
+    font-size: calc(var(--pecentage2)*10);
 
  }
  .comment{
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 5px;
-    font-size: calc(var(--pecentage2)*12);
+    font-size: calc(var(--pecentage2)*10);
 
  }
 .title-info{
