@@ -590,7 +590,10 @@ input[type="text"] {
 /* @media (max-aspect-ratio: 1/1) { */
     /* @media (max-width: 800px){ */
 /* @media (width: 800px) and (max-height: 799px) { */
-    @media (max-width: 800px) and (max-aspect-ratio: 88/100) {
+
+    /* @media (max-width: 800px) and (max-aspect-ratio: 88/100) { */
+    @media (max-width: 850px) and (max-aspect-ratio: 121/100) {
+
     /* @media (max-width: 800px) { */
         .home{
             display: none !important;
@@ -654,16 +657,17 @@ input[type="text"] {
     padding-top: calc(var(--percentage2)*10);
     padding-left: calc(var(--percentage2)*20);
     padding-right: calc(var(--percentage2)*20);
-    padding-bottom: calc(var(--percentage2)*10);
+    padding-bottom: calc(var(--percentage2)*20);
 
     border-radius: calc(var(--percentage2)*30);
 
     margin-bottom: 0px;
-
+    /* background-color: blue; */
 }
 .heading{
     /* width: 100%; */
     font-size: calc(var(--pecentage2)*15);
+    /* margin-top: calc(var(--percentage2)*20); */
     /* background-color: blue; */
 }
 .input-container{
@@ -672,7 +676,9 @@ input[type="text"] {
     /* background-color: green; */
 }
 .text{
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: calc(var(--percentage2)*10);
+
  }
  .text::placeholder{
      font-size: 14px;
@@ -687,6 +693,7 @@ input[type="text"] {
 .actions{
     /* margin-top: calc(var(--pecentage2)*80); */
     margin-top: 10px;
+    display: none;
 
     /* background-color: brown; */
 }
@@ -924,7 +931,9 @@ input[type="text"] {
 
 /* @media (width: 600px) and (max-height: 599px) { */
 
-@media (width: 600px) and (max-aspect-ratio: 88/100) {
+/* @media (width: 600px) and (max-aspect-ratio: 88/100) { */
+@media (width: 600px) and (max-aspect-ratio: 121/100) {
+
     /* .container{
         display: flex;
         flex-direction: column;

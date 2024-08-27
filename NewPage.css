@@ -262,7 +262,8 @@
 .comments{
     width: 100%;
     height: auto;
-    background-color: rgb(52, 51, 51);
+    /* background-color: rgb(52, 51, 51); */
+    background-color: var(--share-like-background);
     margin-top: 20px;
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
@@ -271,6 +272,7 @@
 .heading{
     width: 100%;
     color: var(--text-color);
+    /* color: white; */
     font-size: 18px;
     /* background-color: blue; */
 }
@@ -283,14 +285,16 @@
 .text{
    width: 100%;
    background-color: rgb(52, 51, 51, 0);
-   border-color: rgb(52, 51, 51, 0) rgb(52, 51, 51, 0) white rgb(52, 51, 51, 0);
+   border-color: rgb(52, 51, 51, 0) rgb(52, 51, 51, 0) var(--text-color) rgb(52, 51, 51, 0);
    font-size: 14px;
 }
 .text::placeholder{
     color: var(--text-color);
+    /* color: white; */
     font-size: 14px;
 }
 input[type="text"] {
+    /* color: white; */
     color: var(--text-color); 
     padding-left: 10px;
     font-size: 14px;
