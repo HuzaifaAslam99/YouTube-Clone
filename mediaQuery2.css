@@ -347,7 +347,7 @@
     font-size: calc(var(--percentage2)*40);
     /* font-weight: calc(var(--percentage2)*700); */
     font-weight: 700;
-    margin: calc(var(--percentage2)*10) 0px;
+    margin: calc(var(--percentage2)*20) 0px;
     pointer-events: auto;
 
 }
@@ -816,7 +816,7 @@ input[type="text"] {
     font-size: calc(var(--percentage2)*45);
     /* font-weight: calc(var(--percentage2)*700); */
     font-weight: 600;
-    margin: calc(var(--percentage2)*10) 0px;
+    margin: calc(var(--percentage2)*20) 0px;
     /* pointer-events: auto; */
 }
 
