@@ -500,7 +500,7 @@
 .comments{
     width: 100%;
     height: auto;
-    background-color: rgb(52, 51, 51);
+    /* background-color: rgb(52, 51, 51); */
     margin-top: calc(var(--pecentage3)*20);
     border-radius: calc(var(--pecentage3)*30);
     padding: calc(var(--pecentage3)*10) calc(var(--pecentage3)*20) calc(var(--pecentage3)*10) calc(var(--pecentage3)*20);
