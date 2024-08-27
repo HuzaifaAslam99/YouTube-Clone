@@ -100,8 +100,8 @@
     -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    /* pointer-events: none; */
-    /* background-color: blue; */
+    pointer-events: none;
+    /* background-color: red; */
 
 }
 .channel-subscribe-download{
@@ -268,13 +268,13 @@
     height: auto;
     /* background-color: rgb(52, 51, 51); */
     background-color: var(--share-like-background);
-    /* margin-top: 20px; */
-    margin-top: 0px;
+    margin-top: 20px;
+    /* margin-top: 0px; */
 
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
-    margin-bottom: 30px; 
-    /* background-color: var(--share-like-background); */
+    /* margin-bottom: 30px;  */
+    /* background-color: blue; */
 
 }
 .heading{
@@ -347,4 +347,24 @@ input[type="text"] {
     border-radius: 6px; 
     border: 3px solid var(--scroll-background-color);
 
+}
+
+.arrow-down{
+    display: none;
+    width: 100%;
+    height: 40px;
+    /* margin-top: 10px;  */
+    /* background-color: var(--share-like-background); */
+    /* background-color: rgb(52, 51, 51, 0.5); */
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+
+}
+
+.arrow-down-svg{
+    width: 40px;
+    height: 40px;
+    /* color: black; */
+    /* background-color: green; */
 }

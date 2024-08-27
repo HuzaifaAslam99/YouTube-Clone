@@ -19,6 +19,7 @@ html{
   --scroll-inner-color: rgb(139, 137, 137);
   --share-like-background:  rgb(212, 211, 211, 0.4);
   --subscribe-color: black;
+  --arrow-div: rgb(212, 211, 211, 0.4);
 }
 
 :root[data-theme='dark'] {
@@ -29,6 +30,7 @@ html{
   --scroll-inner-color: rgb(95, 93, 93);
   --share-like-background:  rgb(93, 91, 91, 0.4);
   --subscribe-color: #e9e7e7;
+  --arrow-div: rgb(105, 103, 103);
 }
 
 body {

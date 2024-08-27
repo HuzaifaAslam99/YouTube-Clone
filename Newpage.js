@@ -8,7 +8,7 @@ let arrayID = [];
 //   if (savedTheme) {
 //       document.documentElement.setAttribute('data-theme', savedTheme);
 //       console.log("saved Theme");
-      
+
 //   }
 // };
 
@@ -19,18 +19,18 @@ function Click() {
 
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        console.log(savedTheme);
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      console.log(savedTheme);
     }
-    else{
+    else {
       console.log("not");
-      
+
     }
 
     const storedContainer = localStorage.getItem("video");
     // console.log(storedContainer);    
     // console.log("--------------");
-    
+
     const tempContainer = document.createElement('div');
     tempContainer.innerHTML = storedContainer;
 
@@ -63,6 +63,59 @@ function Click() {
     const referenceElement3 = wow3.querySelector(".channel-subscribe-download");
     wow3.insertBefore(channel_title, referenceElement3);
 
+
+    let channel_subscribe = document.querySelector(".channel-subscribe-download");
+    let comments = document.querySelector(".comments");
+    let arrow_down = document.querySelector(".arrow-down");
+    let title_info = document.querySelector(".title-info");
+    // if (channel_title) {
+    console.log("Title element found:", channel_title);
+
+    channel_title.addEventListener("click", () => {
+      console.log("Clicked Title");
+
+      channel_title.style.display = "none";
+
+
+      channel_subscribe.style.display = "none";
+      comments.style.display = "none";
+      arrow_down.style.display = "block";
+
+      arrow_down.style.display = "flex"
+      arrow_down.style.justifyContent = "flex-end"
+      arrow_down.style.alignItems = "center"
+
+      // title_info.style.paddingLeft = "0px"
+      // title_info.style.paddingRight = "0px"
+      // title_info.style.height = "auto"
+
+    });
+
+    arrow_down.addEventListener("click", () => {
+      channel_title.style.display = "block";
+      channel_subscribe.style.display = "block";
+      comments.style.display = "block";
+      arrow_down.style.display = "none";
+
+      channel_title.style.display = '-webkit-box';
+      channel_title.webkitLineClamp = '2';
+      channel_title.style.webkitBoxOrient = 'vertical';
+      channel_title.style.textOverflow = 'ellipsis';
+
+      channel_subscribe.style.height = "auto";
+
+    });
+
+  //   if (window.innerWidth > 850) {
+  //     channel_subscribe.style.display = "flex"
+  //     channel_subscribe.style.flexDirection= "row"
+  //     channel_subscribe.style.alignItems = "center"
+  //     channel_subscribe.style.justifyContent = "space-between"
+  // }
+    // } else {
+    //   console.log("Title element not found.");
+    // }
+
     // let div = document.createElement("div")
     // div.className = "comments"
     // const wow4 = document.querySelector(".title-info")
@@ -71,7 +124,7 @@ function Click() {
 
     // let package = document.querySelector(".package")
     // console.log(package.outerHTML);
-    
+
 
 
     let video_array = [
@@ -227,7 +280,7 @@ function Click() {
         // console.log("Comments: "+comments)
 
         // console.log(comments);
-        
+
 
 
         count++;
@@ -275,13 +328,13 @@ suggestion_videos.forEach(Clicked => {
     arrayID.forEach(element2 => {
       if (element2.id === tempDivID) {
         console.log(tempDivID);
-        
+
         let array = JSON.parse(localStorage.getItem('array'));
 
         array.forEach(element3 => {
           let video3 = element3.videoData;
           let tempDivAtt = element2.getAttribute('video-data');
-          
+
           if (video3 === tempDivAtt) {
             let video = document.createElement('div');
             video.innerHTML = element3.InnerHTML;
@@ -290,12 +343,12 @@ suggestion_videos.forEach(Clicked => {
 
             console.log(video.outerHTML);
             localStorage.setItem('video', video.outerHTML);
-            
+
             // Reload the page to reflect the changes in the stored video
             // window.location.href = window.location.href;
             location.reload();
-                // const url = Clicked.getAttribute("data-url");
-                // window.location.href = url;
+            // const url = Clicked.getAttribute("data-url");
+            // window.location.href = url;
           }
         });
       }
@@ -306,53 +359,66 @@ suggestion_videos.forEach(Clicked => {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const inputField = document.querySelector('.text');
   const cancelButton = document.querySelector('.cancel');
   const commentButton = document.querySelector('.comment');
   const availableComments = document.querySelector('.available-comments');
-  
+
   // Function to clear the input field
   function clearComment() {
-      inputField.value = ''; // Clear the input field
+    inputField.value = ''; // Clear the input field
   }
-  
+
   // Function to handle adding a comment
   function addComment() {
-      const comment = inputField.value.trim();
-      if (comment) {
-          // Create a new comment element
-          const commentElement = document.createElement('div');
-          commentElement.classList.add('comment-item');
-          commentElement.textContent = comment;
-          
-          // Append the new comment to the available-comments section
-          availableComments.appendChild(commentElement);
-          
-          // Clear the input field after adding the comment
-          inputField.value = '';
-      } else {
-          console.log('No comment to add.');
-      }
+    const comment = inputField.value.trim();
+    if (comment) {
+      // Create a new comment element
+      const commentElement = document.createElement('div');
+      commentElement.classList.add('comment-item');
+      commentElement.textContent = comment;
+
+      // Append the new comment to the available-comments section
+      availableComments.appendChild(commentElement);
+
+      // Clear the input field after adding the comment
+      inputField.value = '';
+    } else {
+      console.log('No comment to add.');
+    }
   }
-  
+
   // Add event listeners
   cancelButton.addEventListener('click', clearComment);
   commentButton.addEventListener('click', addComment);
+
+
 });
 
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-let title = document.querySelector(".Title")
-let channel_subscribe = document.querySelector(".channel-subscribe-download")
-let comments = document.querySelector(".comments")
+window.addEventListener('load', function() {
+  const channel_subscribe = document.querySelector('.channel-subscribe-download'); // Change to your specific selector
+  
+  function updateStyles() {
+    if (window.innerWidth > 850) {
+      channel_subscribe.style.display = "flex";
+      channel_subscribe.style.flexDirection = "row";
+      channel_subscribe.style.alignItems = "center";
+      channel_subscribe.style.justifyContent = "space-between";
+    } else {
+      // Optional: Reset styles if the width is less than or equal to 850px
+      channel_subscribe.style.display = ""; // or "none" if you want to hide it
+      channel_subscribe.style.flexDirection = "";
+      channel_subscribe.style.alignItems = "";
+      channel_subscribe.style.justifyContent = "";
+    }
+  }
 
-
-title.addEventListener("click",()=>{
-   title.style.display = "none"
-   channel_subscribe.style.display = "none"
-   comments.style.display = "none"
-})
+  updateStyles(); // Run once on load
+  window.addEventListener('resize', updateStyles); // Run on resize
 });
+
+
