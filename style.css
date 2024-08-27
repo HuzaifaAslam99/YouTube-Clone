@@ -20,6 +20,7 @@ html{
   --share-like-background:  rgb(212, 211, 211, 0.4);
   --subscribe-color: black;
   --arrow-div: rgb(212, 211, 211, 0.4);
+  --comment-box: rgb(212, 211, 211)
 }
 
 :root[data-theme='dark'] {
@@ -31,6 +32,7 @@ html{
   --share-like-background:  rgb(93, 91, 91, 0.4);
   --subscribe-color: #e9e7e7;
   --arrow-div: rgb(105, 103, 103);
+  --comment-box: rgb(93, 91, 91)
 }
 
 body {

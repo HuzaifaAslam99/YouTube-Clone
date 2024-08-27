@@ -106,26 +106,6 @@ function Click() {
 
     });
 
-  //   if (window.innerWidth > 850) {
-  //     channel_subscribe.style.display = "flex"
-  //     channel_subscribe.style.flexDirection= "row"
-  //     channel_subscribe.style.alignItems = "center"
-  //     channel_subscribe.style.justifyContent = "space-between"
-  // }
-    // } else {
-    //   console.log("Title element not found.");
-    // }
-
-    // let div = document.createElement("div")
-    // div.className = "comments"
-    // const wow4 = document.querySelector(".title-info")
-    // const referenceElement4 = wow3.querySelector(".channel-subscribe-download");
-    // wow4.insertBefore(div, referenceElement4.nextSibling)
-
-    // let package = document.querySelector(".package")
-    // console.log(package.outerHTML);
-
-
 
     let video_array = [
       { id: "arshad nadeem", sub: "13.9M subscribers", path: "videos/Arshad Nadeem.mp4" },
@@ -150,6 +130,7 @@ function Click() {
     if (videoData) {
       const package = document.querySelector(".package")
       const videoElement = document.createElement('video');
+      videoElement.className = "video-play"
       videoElement.src = videoData.path
       const referenceElement4 = package.querySelector(".title-info");
       package.insertBefore(videoElement, referenceElement4)
@@ -157,18 +138,16 @@ function Click() {
       videoElement.controls = true;
       // videoElement.play();
 
-
       let channel_subscribers = document.querySelector(".channel-name-subscribers")
       const subscribers = document.createElement("span")
       subscribers.innerHTML = videoData.sub
       subscribers.className = "subscribers"
-      // console.log(subscribers);
-      // console.log(channel_subscribers);
       channel_subscribers.appendChild(subscribers)
 
-
+      subscribers.addEventListener('click', (e) => {
+        console.log("Clicked Video");
+      });
     }
-
 
 
     let new_array = []
@@ -399,9 +378,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   const channel_subscribe = document.querySelector('.channel-subscribe-download'); // Change to your specific selector
-  
+
   function updateStyles() {
     if (window.innerWidth > 850) {
       channel_subscribe.style.display = "flex";
@@ -422,3 +401,100 @@ window.addEventListener('load', function() {
 });
 
 
+
+let heightPx;
+let remainingPx;
+let slideBox = document.querySelector('.cover-box');
+
+function updateSlideBoxHeight() {
+setTimeout(() => {
+  let video = document.querySelector('.video-play');
+  let title_info = document.querySelector(".title-info")
+
+  heightPx = video.offsetHeight;
+  let viewportHeight = window.innerHeight;
+  remainingPx = viewportHeight - heightPx
+  console.log("Video Height : " + heightPx + "px");
+  console.log("Remaining Height : " + remainingPx + "px");
+
+  const comments= document.querySelector('.comments');
+
+  // const slideBox = document.querySelector('.cover-box');
+  slideBox.style.minHeight = `${remainingPx}px`;
+  slideBox.style.overflowY = 'auto';
+
+  console.log(remainingPx)
+
+  comments.addEventListener("click",()=>{
+   slideBox.style.display = "block"
+   console.log("Clicked"); 
+   title_info.style.paddingLeft = "0px"
+   title_info.style.paddingRight = "0px"
+})
+
+  
+const box = document.querySelector('.first-Comments');
+  box.addEventListener("click",()=>{
+  slideBox.style.display = "none"
+  console.log("Clicked"); 
+  title_info.style.paddingLeft = ""
+  title_info.style.paddingRight = ""
+})
+  
+
+}, 2);
+
+}
+
+updateSlideBoxHeight(); // Call immediately on load
+
+// Optional: Update on resize
+window.addEventListener('resize', updateSlideBoxHeight);
+
+// window.addEventListener('resize', ()=> {
+// setTimeout(() => {
+//   const slideBox = document.querySelector('.cover-box');
+//   slideBox.style.minHeight = `${remainingPx}px`;
+//   slideBox.style.overflowY = 'auto';
+// }, 2);
+ 
+// });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const inputField = document.querySelector('.text1');
+  const cancelButton = document.querySelector('.cancel1');
+  const commentButton = document.querySelector('.comment1');
+  const availableComments = document.querySelector('.available-comments1');
+
+  // Function to clear the input field
+  function clearComment() {
+    inputField.value = ''; // Clear the input field
+  }
+
+  // Function to handle adding a comment
+  function addComment() {
+    const comment = inputField.value.trim();
+    if (comment) {
+      // Create a new comment element
+      const commentElement = document.createElement('div');
+      commentElement.classList.add('comment-item');
+      commentElement.textContent = comment;
+
+      // Append the new comment to the available-comments section
+      availableComments.appendChild(commentElement);
+
+      // Clear the input field after adding the comment
+      inputField.value = '';
+    } else {
+      console.log('No comment to add.');
+    }
+  }
+
+  // Add event listeners
+  cancelButton.addEventListener('click', clearComment);
+  commentButton.addEventListener('click', addComment);
+
+})

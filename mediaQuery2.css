@@ -554,6 +554,7 @@
 
     border-radius: calc(var(--pecentage2)*30);
     padding: calc(var(--pecentage2)*10) calc(var(--pecentage2)*20) calc(var(--pecentage2)*10) calc(var(--pecentage2)*20);
+    pointer-events: auto;
     /* margin-bottom: calc(var(--pecentage2)*30); */
     /* margin-bottom: 0px; */
 }
@@ -563,6 +564,7 @@
     /* background-color: blue; */
 }
 .input-container{
+   display: none;
    height: auto;
    width: 100%;
    /* background-color: blue; */
@@ -623,6 +625,12 @@ input[type="text"] {
     color: var(--text-color);
     /* background-color: green; */
 }
+
+
+
+
+
+
 }
 
 

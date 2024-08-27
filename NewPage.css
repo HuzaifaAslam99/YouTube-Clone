@@ -72,9 +72,10 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 0px 10px 100px 10px;
+    padding: 0px 10px 100px 0px;
     /* overflow-y: auto; */
     /* background-color: red; */
+
 }
 
 .video-play {
@@ -273,6 +274,7 @@
 
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
+    pointer-events: none;
     /* margin-bottom: 30px;  */
     /* background-color: blue; */
 
@@ -353,18 +355,100 @@ input[type="text"] {
     display: none;
     width: 100%;
     height: 40px;
-    /* margin-top: 10px;  */
-    /* background-color: var(--share-like-background); */
-    /* background-color: rgb(52, 51, 51, 0.5); */
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center; */
-
 }
 
 .arrow-down-svg{
     width: 40px;
     height: 40px;
-    /* color: black; */
+}
+
+
+
+.cover-box {
+    display: none;
+    background-color: var(--comment-box);
+    width: 100%;
+    position: absolute;
+    /* padding: calc((var(--pecentage2)*10)); */
+    padding: 10px;
+    /* overflow-y: auto; */
+    /* bottom: 0%; */
+}
+
+  
+
+
+.first-Comments{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.heading1{
+    width: 100%;
+    font-size: 18px;
+    color: var(--text-color)
+    /* background-color: blue; */
+}
+.Arrow-Down{
+    width: 30px;
+    height: 30px;
+    color: var(--text-color);
     /* background-color: green; */
+}
+.input-container1{
+   /* display: none; */
+   height: auto;
+   width: 100%;
+   /* background-color: blue; */
+   margin-top: 10px;
+}
+.text1{
+   width: 100%;
+   font-size: 14px;
+   background-color: rgb(52, 51, 51, 0);
+   border-color: rgb(52, 51, 51, 0) rgb(52, 51, 51, 0) var(--text-color) rgb(52, 51, 51, 0);
+
+}
+.text1::placeholder{
+    /* font-size: calc(var(--pecentage2)*14); */
+    font-size: 14px;
+    color: var(--text-color);
+}
+input[type="text"] {
+    padding-left: 10px;
+    /* font-size: calc(var(--pecentage2)*14); */
+    font-size: 14px;
+    color: var(--text-color);
+}
+.actions1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
+}
+.cancel1{
+   background-color: white;
+   border-radius: 10px;
+   padding: 5px;
+   font-size: calc(var(--pecentage2)*14);
+   color: black;
+}
+.comment1{
+   background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: black;
+}
+.available-comments1{
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: var(--text-color);
 }
