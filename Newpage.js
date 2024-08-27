@@ -341,3 +341,18 @@ document.addEventListener('DOMContentLoaded', function() {
   commentButton.addEventListener('click', addComment);
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+let title = document.querySelector(".Title")
+let channel_subscribe = document.querySelector(".channel-subscribe-download")
+let comments = document.querySelector(".comments")
+
+
+title.addEventListener("click",()=>{
+   title.style.display = "none"
+   channel_subscribe.style.display = "none"
+   comments.style.display = "none"
+})
+});
