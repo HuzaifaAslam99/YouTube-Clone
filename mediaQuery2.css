@@ -662,7 +662,7 @@ input[type="text"] {
 .comments{
     /* display: none; */
     /* margin-top: 80px; */
-    margin-top: calc(var(--percentage2)*20);
+    margin-top: calc(var(--percentage2)*30);
     /* margin-top: calc(var(--percentage2)*80); */
     padding-top: calc(var(--percentage2)*10);
     padding-left: calc(var(--percentage2)*20);
