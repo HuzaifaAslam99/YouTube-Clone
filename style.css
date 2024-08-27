@@ -31,8 +31,10 @@ html{
   --scroll-inner-color: rgb(95, 93, 93);
   --share-like-background:  rgb(93, 91, 91, 0.4);
   --subscribe-color: #e9e7e7;
-  --arrow-div: rgb(105, 103, 103);
-  --comment-box: rgb(93, 91, 91)
+  --arrow-div: rgb(231, 225, 225);
+  /* --comment-box: rgb(52, 51, 51); */
+  --comment-box: rgb(28, 27, 27);
+
 }
 
 body {
