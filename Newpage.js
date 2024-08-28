@@ -85,10 +85,6 @@ function Click() {
       arrow_down.style.justifyContent = "flex-end"
       arrow_down.style.alignItems = "center"
 
-      // title_info.style.paddingLeft = "0px"
-      // title_info.style.paddingRight = "0px"
-      // title_info.style.height = "auto"
-
     });
 
     arrow_down.addEventListener("click", () => {
@@ -105,6 +101,25 @@ function Click() {
       channel_subscribe.style.height = "auto";
 
     });
+
+    function updateStyles2() {
+    if (window.innerWidth>850){
+      channel_title.style.display = "block";
+      channel_subscribe.style.display = "block";
+      comments.style.display = "block";
+      arrow_down.style.display = "none";
+
+      channel_title.style.display = '-webkit-box';
+      channel_title.webkitLineClamp = '2';
+      channel_title.style.webkitBoxOrient = 'vertical';
+      channel_title.style.textOverflow = 'ellipsis';
+
+      channel_subscribe.style.height = "auto";
+      
+    } 
+  }
+    updateStyles2()
+    window.addEventListener("resize",updateStyles2)
 
 
     let video_array = [
@@ -144,9 +159,9 @@ function Click() {
       subscribers.className = "subscribers"
       channel_subscribers.appendChild(subscribers)
 
-      subscribers.addEventListener('click', (e) => {
-        console.log("Clicked Video");
-      });
+      // subscribers.addEventListener('click', (e) => {
+      //   console.log("Clicked Video");
+      // });
     }
 
 
@@ -344,6 +359,9 @@ let profile = tempContainer.firstChild
 profile.className = "logo"
 console.log(profile);
 
+const profile_logo = document.querySelector('.Profile-logo');
+
+profile_logo.innerHTML = profile.innerHTML
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -520,3 +538,6 @@ document.addEventListener('DOMContentLoaded', function () {
   commentButton.addEventListener('click', addComment);
 
 })
+
+
+

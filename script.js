@@ -2,7 +2,8 @@ const savedTheme = localStorage.getItem('theme');
 document.documentElement.setAttribute('data-theme', savedTheme);
 console.log(savedTheme);
 
-
+let check = false;
+let capital;
 
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelector('.Profile-logo');
@@ -10,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTheme;
     currentTheme = document.documentElement.getAttribute('data-theme');
     // if (savedTheme) {
-        // const savedTheme = localStorage.getItem('theme');
-        // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
-        // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
-        // console.log(savedTheme);
+    // const savedTheme = localStorage.getItem('theme');
+    // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
+    // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
+    // console.log(savedTheme);
     // }
     if (!currentTheme) {
         currentTheme = 'light';
@@ -76,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const logoRect = logo.getBoundingClientRect();
                 options.style.top = `${logoRect.bottom}px`;
                 // console.log(logoRect.bottom);
-                
+
                 options.style.right = "1px";
                 options.style.marginRight = "70px";
 
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (divs[0]) {
             divs[0].addEventListener('click', () => {
                 options.innerHTML =
-           `<div class="appearance-new" data-theme="dark">
+                    `<div class="appearance-new" data-theme="dark">
             <div class="svg-word">
             <div class="tick" style="visibility: ${currentTheme === 'dark' ? 'visible' : 'hidden'}">
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -137,40 +138,82 @@ document.addEventListener('DOMContentLoaded', () => {
 </svg>
             </div>`;
 
-            options.addEventListener('click', (event) => {
-                event.stopPropagation();
-            });
-
-            const divs = document.querySelectorAll('.appearance-new');
-
-            if (divs[0]) {
-                divs[0].addEventListener('click', () => {
-                    // Show tick for dark theme and hide for light theme
-                    divs[0].querySelector('.tick').style.visibility = 'visible';
-                    divs[1].querySelector('.tick').style.visibility = 'hidden';
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
+                options.addEventListener('click', (event) => {
+                    event.stopPropagation();
                 });
-            }
-    
-            if(divs[1]) {
-                divs[1].addEventListener('click', () => {
-                    // Show tick for light theme and hide for dark theme
-                    divs[1].querySelector('.tick').style.visibility = 'visible';
-                    divs[0].querySelector('.tick').style.visibility = 'hidden';
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                    // currentTheme = 'light';
 
-                });
-            }
+                const divs = document.querySelectorAll('.appearance-new');
+
+                if (divs[0]) {
+                    divs[0].addEventListener('click', () => {
+                        // Show tick for dark theme and hide for light theme
+                        divs[0].querySelector('.tick').style.visibility = 'visible';
+                        divs[1].querySelector('.tick').style.visibility = 'hidden';
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark');
+                    });
+                }
+
+                if (divs[1]) {
+                    divs[1].addEventListener('click', () => {
+                        // Show tick for light theme and hide for dark theme
+                        divs[1].querySelector('.tick').style.visibility = 'visible';
+                        divs[0].querySelector('.tick').style.visibility = 'hidden';
+                        document.documentElement.setAttribute('data-theme', 'light');
+                        localStorage.setItem('theme', 'light');
+                        // currentTheme = 'light';
+
+                    });
+                }
 
             })
         }
-       
+
         if (divs[1]) {
             divs[1].addEventListener('click', () => {
-                alert('Hi');
+                // alert('Hi');
+                options.innerHTML =
+                    `<div class="input-Heading">
+            <span class="word-input">Enter Username</span>
+
+            <svg class="svg-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                color="#000000" fill="none">
+                <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <input class="enter" type="text">`
+
+                let search = document.querySelector(".svg-search")
+                search.addEventListener("click", () => {
+                    inputValue = document.querySelector(".enter")
+                    const username = inputValue.value.trim();
+
+
+                    console.log(username);
+
+                    capital = (username.charAt(0)).toUpperCase()
+                    console.log(capital);
+
+                    logo.innerHTML = capital
+
+                    console.log(logo.innerHTML);
+                    options.remove();
+
+                    check = true;
+
+                    if (check) {
+                        let profile1 = document.querySelector(".Profile-logo")
+                        localStorage.setItem('profile', profile1.outerHTML);
+                        console.log("Profile1");
+                        console.log(profile1);
+
+                    }
+                })
+
             });
         }
     }
@@ -193,37 +236,37 @@ let close1 = document.querySelector(".cross-icon");
 let left1 = document.querySelector(".left");
 
 function applyHamburgerStyles() {
-if ((window.innerWidth > 1040)){
-    // left1.style.position = "relative";
-    // left1.style.left = "0%";
-    // left1.style.width = "15vw"
+    if ((window.innerWidth > 1040)) {
+        // left1.style.position = "relative";
+        // left1.style.left = "0%";
+        // left1.style.width = "15vw"
 
-    left1.style.position = "";
-    left1.style.left = "";
-    left1.style.width = "";
-}
-else {
-    left1.style.position = "absolute";
-    left1.style.left = "-100%";
-    left1.style.width = "220px"
-}
- if(window.innerWidth <= 1040) { 
-
-    hamburger.addEventListener("click", () => {
-        hamburger.style.display = "none";
-        close1.style.display = "block";
+        left1.style.position = "";
+        left1.style.left = "";
+        left1.style.width = "";
+    }
+    else {
         left1.style.position = "absolute";
-        left1.style.width = "220px";
-        left1.style.left = "0%";
-        console.log("hamburger clicked");
-    });
-
-    close1.addEventListener("click", () => {
-        hamburger.style.display = "block";
-        close1.style.display = "none";
         left1.style.left = "-100%";
-    });
-    } 
+        left1.style.width = "220px"
+    }
+    if (window.innerWidth <= 1040) {
+
+        hamburger.addEventListener("click", () => {
+            hamburger.style.display = "none";
+            close1.style.display = "block";
+            left1.style.position = "absolute";
+            left1.style.width = "220px";
+            left1.style.left = "0%";
+            console.log("hamburger clicked");
+        });
+
+        close1.addEventListener("click", () => {
+            hamburger.style.display = "block";
+            close1.style.display = "none";
+            left1.style.left = "-100%";
+        });
+    }
 }
 
 applyHamburgerStyles();
@@ -232,12 +275,12 @@ window.addEventListener("resize", applyHamburgerStyles);
 
 
 const video = document.querySelectorAll(".video2");
-video.forEach(element=> {
-    element.addEventListener('click', function() {
-       const video = element.outerHTML
-            localStorage.setItem('video', video);
-            const url = element.getAttribute("data-url");
-            window.location.href = url;
+video.forEach(element => {
+    element.addEventListener('click', function () {
+        const video = element.outerHTML
+        localStorage.setItem('video', video);
+        const url = element.getAttribute("data-url");
+        window.location.href = url;
     });
 });
 
@@ -249,17 +292,30 @@ video.forEach(element => {
     });
 });
 
-localStorage.setItem('array',  JSON.stringify(array));
+localStorage.setItem('array', JSON.stringify(array));
 console.log(array);
 
 
-let profile1 = document.querySelector(".Profile-logo")
-localStorage.setItem('profile', profile1.outerHTML);
+const profileReceived = localStorage.getItem("profile");
+console.log("Profile Received: "+profileReceived);
 
-// console.log("Profile1");
-// console.log(profile1);
+if (profileReceived) {
+    const tempContainer = document.createElement('div');
+    tempContainer.innerHTML = profileReceived;
+    let profile = tempContainer.firstChild;
+    const profile_logo = document.querySelector('.Profile-logo');
+    profile_logo.innerHTML = profile.innerHTML
+}
 
 
+if (!check & !profileReceived) {
+
+    let profile1 = document.querySelector(".Profile-logo")
+    localStorage.setItem('profile', profile1.outerHTML);
+
+    console.log("Profile1");
+    console.log(profile1);
+
+}
 
 
-// const storedContainer = localStorage.getItem("suggestion_video");

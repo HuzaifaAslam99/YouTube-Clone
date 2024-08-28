@@ -105,3 +105,56 @@
     font-size: 14px;
     color: white;
 }
+
+
+
+
+
+
+
+.input-Heading {
+    font-size: 16px;
+    width: 100%;
+    /* background-color: blue; */
+    box-sizing: border-box;
+    height: 50%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.svg-search {
+    width: 15%;
+    height: 40%;
+    color: white;
+    cursor: pointer;
+    /* color: black; */
+    /* background-color: red; */
+}
+
+.word-input {
+    box-sizing: border-box;
+    width: 70%;
+    margin-left: 5%;
+    /* background-color: yellow; */
+}
+
+.enter{
+    /* background-color: green; */
+    width: 90%;
+    box-sizing: border-box;
+    height: 40%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 3%;
+    margin: 0% 5%;
+}
+
+input[type="text"] {
+    /* color: yellow; */
+    color: black;
+}
