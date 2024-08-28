@@ -154,7 +154,7 @@
     margin: 0% 5% 5% 5%;
 }
 
-input[type="text"] {
+input.enter {
     /* color: yellow; */
     color: black;
 }

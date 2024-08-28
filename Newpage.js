@@ -153,6 +153,62 @@ function Click() {
       videoElement.controls = true;
       // videoElement.play();
 
+
+      let slideBox = document.querySelector('.cover-box');
+      let comments = document.querySelector('.comments');
+      let title_info = document.querySelector(".title-info");
+      
+      function updateSlideBoxHeight() {
+          // setTimeout(() => {
+              // let video = document.querySelector('.video-play');
+              // let heightPx = video ? video.offsetHeight : 0;
+              let heightPx = videoElement.offsetHeight;
+              let viewportHeight = window.innerHeight;
+              let remainingPx = viewportHeight - heightPx;
+      
+              slideBox.style.minHeight = `${remainingPx}px`;
+              slideBox.style.overflowY = 'auto';
+      
+              if (window.innerWidth <= 850) {
+                  // Add event listeners only if they are not already attached
+                  comments.addEventListener("click", handleCommentsClick);
+                  const box = document.querySelector('.first-Comments');
+                  if (box) {
+                      box.addEventListener("click", handleBoxClick);
+                  }
+              } else {
+                  // Remove event listeners if the width is greater than 850px
+                  comments.removeEventListener("click", handleCommentsClick);
+                  const box = document.querySelector('.first-Comments');
+                  if (box) {
+                      box.removeEventListener("click", handleBoxClick);
+                  }
+                  slideBox.style.display = "none";
+              }
+          // }, 2);
+      }
+      
+      function handleCommentsClick() {
+          slideBox.style.display = "block";
+          title_info.style.paddingLeft = "0px";
+          title_info.style.paddingRight = "0px";
+      }
+      
+      function handleBoxClick() {
+          slideBox.style.display = "none";
+          title_info.style.paddingLeft = "";
+          title_info.style.paddingRight = "";
+      }
+      
+      // Initial setup
+      updateSlideBoxHeight();
+      
+      // Update on resize
+      window.addEventListener('resize', updateSlideBoxHeight);
+
+
+
+
       let channel_subscribers = document.querySelector(".channel-name-subscribers")
       const subscribers = document.createElement("span")
       subscribers.innerHTML = videoData.sub
@@ -438,57 +494,57 @@ window.addEventListener('load', function () {
 
 
 
-let slideBox = document.querySelector('.cover-box');
-let comments = document.querySelector('.comments');
-let title_info = document.querySelector(".title-info");
+// let slideBox = document.querySelector('.cover-box');
+// let comments = document.querySelector('.comments');
+// let title_info = document.querySelector(".title-info");
 
-function updateSlideBoxHeight() {
-    setTimeout(() => {
-        let video = document.querySelector('.video-play');
-        // let heightPx = video ? video.offsetHeight : 0;
-        let heightPx = video.offsetHeight;
-        let viewportHeight = window.innerHeight;
-        let remainingPx = viewportHeight - heightPx;
+// function updateSlideBoxHeight() {
+//     setTimeout(() => {
+//         let video = document.querySelector('.video-play');
+//         // let heightPx = video ? video.offsetHeight : 0;
+//         let heightPx = video.offsetHeight;
+//         let viewportHeight = window.innerHeight;
+//         let remainingPx = viewportHeight - heightPx;
 
-        slideBox.style.minHeight = `${remainingPx}px`;
-        slideBox.style.overflowY = 'auto';
+//         slideBox.style.minHeight = `${remainingPx}px`;
+//         slideBox.style.overflowY = 'auto';
 
-        if (window.innerWidth <= 850) {
-            // Add event listeners only if they are not already attached
-            comments.addEventListener("click", handleCommentsClick);
-            const box = document.querySelector('.first-Comments');
-            if (box) {
-                box.addEventListener("click", handleBoxClick);
-            }
-        } else {
-            // Remove event listeners if the width is greater than 850px
-            comments.removeEventListener("click", handleCommentsClick);
-            const box = document.querySelector('.first-Comments');
-            if (box) {
-                box.removeEventListener("click", handleBoxClick);
-            }
-            slideBox.style.display = "none";
-        }
-    }, 2);
-}
+//         if (window.innerWidth <= 850) {
+//             // Add event listeners only if they are not already attached
+//             comments.addEventListener("click", handleCommentsClick);
+//             const box = document.querySelector('.first-Comments');
+//             if (box) {
+//                 box.addEventListener("click", handleBoxClick);
+//             }
+//         } else {
+//             // Remove event listeners if the width is greater than 850px
+//             comments.removeEventListener("click", handleCommentsClick);
+//             const box = document.querySelector('.first-Comments');
+//             if (box) {
+//                 box.removeEventListener("click", handleBoxClick);
+//             }
+//             slideBox.style.display = "none";
+//         }
+//     }, 2);
+// }
 
-function handleCommentsClick() {
-    slideBox.style.display = "block";
-    title_info.style.paddingLeft = "0px";
-    title_info.style.paddingRight = "0px";
-}
+// function handleCommentsClick() {
+//     slideBox.style.display = "block";
+//     title_info.style.paddingLeft = "0px";
+//     title_info.style.paddingRight = "0px";
+// }
 
-function handleBoxClick() {
-    slideBox.style.display = "none";
-    title_info.style.paddingLeft = "";
-    title_info.style.paddingRight = "";
-}
+// function handleBoxClick() {
+//     slideBox.style.display = "none";
+//     title_info.style.paddingLeft = "";
+//     title_info.style.paddingRight = "";
+// }
 
 // Initial setup
-updateSlideBoxHeight();
+// updateSlideBoxHeight();
 
 // Update on resize
-window.addEventListener('resize', updateSlideBoxHeight);
+// window.addEventListener('resize', updateSlideBoxHeight);
 
 
 
