@@ -378,7 +378,7 @@ input[type="text"] {
     position: absolute;
     /* padding: calc((var(--pecentage2)*10)); */
     padding: 10px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     /* bottom: 0%; */
 }
 
@@ -455,9 +455,10 @@ input[type="text"] {
 }
 .available-comments1{
     width: 100%;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     font-size: 14px;
     color: var(--text-color);
+    /* background-color: red; */
 }
 
 
@@ -467,7 +468,21 @@ input[type="text"] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
     margin-bottom:  10px;
+    /* background-color: blue; */
+    /* white-space: wrap; */
+}
+
+
+.comment-item{
+    word-wrap: break-word;
+    /* overflow-wrap: break-word; */
+    /* background-color: blue ; */
+    width: 95%;
+
+    
 }
 
 .logo{
