@@ -310,7 +310,7 @@
     /* color: white; */
     font-size: 14px;
 }
-input[type="text"] {
+input.text {
     /* color: white; */
     color: var(--text-color); 
     padding-left: 10px;
@@ -419,29 +419,20 @@ input[type="text"] {
    background-color: rgb(52, 51, 51, 0);
    border-color: rgb(52, 51, 51, 0) rgb(52, 51, 51, 0) var(--text-color) rgb(52, 51, 51, 0);
    color: var(--text-color);
-   /* background-color: aqua; */
-   /* color: white; */
-   /* padding-left: 10px; */
+   box-sizing: border-box;
+   padding-left: 10px;
 
 }
 .text1::placeholder{
-    /* font-size: calc(var(--pecentage2)*14); */
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-size: 14px;
     color: var(--text-color);
-    /* background-color: aqua; */
-
-
 }
-/* input[type="text"]:focus { */
 input.text1{
-    padding-left: 10px;
-    /* font-size: calc(var(--pecentage2)*14); */
     font-size: 14px;
     color: var(--text-color);
-    /* color: red; */
-    /* background-color: aqua; */
 }
+
 .actions1{
     margin-top: 10px;
     /* background-color: red; */
