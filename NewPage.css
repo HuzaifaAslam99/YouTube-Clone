@@ -425,6 +425,7 @@ input[type="text"] {
 }
 .text1::placeholder{
     /* font-size: calc(var(--pecentage2)*14); */
+    padding-left: 10px;
     font-size: 14px;
     color: var(--text-color);
     /* background-color: aqua; */
