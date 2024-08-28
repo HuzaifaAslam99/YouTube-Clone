@@ -473,6 +473,8 @@ input[type="text"] {
     /* overflow-wrap: break-word; */
     margin-bottom:  10px;
     /* background-color: blue; */
+    word-wrap: break-word;
+
     /* white-space: wrap; */
 }
 
@@ -490,11 +492,17 @@ input[type="text"] {
 }
 
 .comment-item{
-    word-wrap: break-word;
     width: 95%;
+    /* background-color: red; */
+    /* display: flex; */
+    align-self: flex-end;
+    word-wrap: break-word;
+    /* overflow-wrap: break-word; */
+
 }
 .comment-item1{
     word-wrap: break-word;
+    align-self: flex-end;
     width: 85%;
 }
 
