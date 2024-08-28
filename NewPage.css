@@ -340,6 +340,7 @@ input[type="text"] {
     width: 100%;
     word-wrap: break-word;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -432,7 +433,6 @@ input[type="text"] {
 }
 .actions1{
     margin-top: 10px;
-    margin-bottom: 10px;
     /* background-color: red; */
     display: flex;
     justify-content: flex-end;
@@ -454,6 +454,7 @@ input[type="text"] {
     color: black;
 }
 .available-comments1{
+    margin-top: 10px;
     width: 100%;
     /* word-wrap: break-word; */
     font-size: 14px;
@@ -475,14 +476,26 @@ input[type="text"] {
     /* white-space: wrap; */
 }
 
+.commentElementBox1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+    margin-bottom:  10px;
+    /* background-color: blue; */
+    /* white-space: wrap; */
+}
 
 .comment-item{
     word-wrap: break-word;
-    /* overflow-wrap: break-word; */
-    /* background-color: blue ; */
+    width: 95%;
+}
+.comment-item1{
+    word-wrap: break-word;
     width: 85%;
-
-    
 }
 
 .logo{

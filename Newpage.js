@@ -336,6 +336,14 @@ suggestion_videos.forEach(Clicked => {
 });
 
 
+const tempContainer = document.createElement('div');    
+const profile1 = localStorage.getItem("profile");
+tempContainer.innerHTML = profile1;
+
+let profile = tempContainer.firstChild
+profile.className = "logo"
+console.log(profile);
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -354,12 +362,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const comment = inputField.value.trim();
     if (comment) {
       // Create a new comment element
+      const commentElementBox = document.createElement('div');
+      commentElementBox.className = "commentElementBox"
+      // commentElement.appendChild(tempContainer.innerHTML)
       const commentElement = document.createElement('div');
       commentElement.classList.add('comment-item');
       commentElement.textContent = comment;
 
+
+
+      commentElementBox.appendChild(profile.cloneNode(true))
+      commentElementBox.appendChild(commentElement);
+      // commentElementBox.insertBefore(commentElement,profile.nextSibling)
+
       // Append the new comment to the available-comments section
-      availableComments.appendChild(commentElement);
+      availableComments.appendChild(commentElementBox);
+      // availableComments.appendChild(commentElement);
 
       // Clear the input field after adding the comment
       inputField.value = '';
@@ -462,19 +480,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const cancelButton = document.querySelector('.cancel1');
   const commentButton = document.querySelector('.comment1');
   const availableComments = document.querySelector('.available-comments1');
-  // let profile = document.querySelector(".Profile-logo")
-  // profile.style.width = "20px";
-
-  const tempContainer = document.createElement('div');    
-  const profile1 = localStorage.getItem("profile");
-  tempContainer.innerHTML = profile1;
-  // console.log(tempContainer.innerHTML);
-
-  let profile = tempContainer.firstChild
-  profile.className = "logo"
-  console.log(profile);
-
-
 
   // Function to clear the input field
   function clearComment() {
@@ -487,10 +492,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (comment) {
       // Create a new comment element
       const commentElementBox = document.createElement('div');
-      commentElementBox.className = "commentElementBox"
+      commentElementBox.className = "commentElementBox1"
       // commentElement.appendChild(tempContainer.innerHTML)
       const commentElement = document.createElement('div');
-      commentElement.classList.add('comment-item');
+      commentElement.classList.add('comment-item1');
       commentElement.textContent = comment;
 
 
