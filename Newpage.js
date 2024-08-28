@@ -402,63 +402,57 @@ window.addEventListener('load', function () {
 
 
 
-let heightPx;
-let remainingPx;
 let slideBox = document.querySelector('.cover-box');
+let comments = document.querySelector('.comments');
+let title_info = document.querySelector(".title-info");
 
 function updateSlideBoxHeight() {
-setTimeout(() => {
-  let video = document.querySelector('.video-play');
-  let title_info = document.querySelector(".title-info")
+    setTimeout(() => {
+        let video = document.querySelector('.video-play');
+        // let heightPx = video ? video.offsetHeight : 0;
+        let heightPx = video.offsetHeight;
+        let viewportHeight = window.innerHeight;
+        let remainingPx = viewportHeight - heightPx;
 
-  heightPx = video.offsetHeight;
-  let viewportHeight = window.innerHeight;
-  remainingPx = viewportHeight - heightPx
-  console.log("Video Height : " + heightPx + "px");
-  console.log("Remaining Height : " + remainingPx + "px");
+        slideBox.style.minHeight = `${remainingPx}px`;
+        slideBox.style.overflowY = 'auto';
 
-  const comments= document.querySelector('.comments');
-
-  // const slideBox = document.querySelector('.cover-box');
-  slideBox.style.minHeight = `${remainingPx}px`;
-  slideBox.style.overflowY = 'auto';
-
-  console.log(remainingPx)
-
-  comments.addEventListener("click",()=>{
-   slideBox.style.display = "block"
-   console.log("Clicked"); 
-   title_info.style.paddingLeft = "0px"
-   title_info.style.paddingRight = "0px"
-})
-
-  
-const box = document.querySelector('.first-Comments');
-  box.addEventListener("click",()=>{
-  slideBox.style.display = "none"
-  console.log("Clicked"); 
-  title_info.style.paddingLeft = ""
-  title_info.style.paddingRight = ""
-})
-  
-
-}, 2);
-
+        if (window.innerWidth <= 850) {
+            // Add event listeners only if they are not already attached
+            comments.addEventListener("click", handleCommentsClick);
+            const box = document.querySelector('.first-Comments');
+            if (box) {
+                box.addEventListener("click", handleBoxClick);
+            }
+        } else {
+            // Remove event listeners if the width is greater than 850px
+            comments.removeEventListener("click", handleCommentsClick);
+            const box = document.querySelector('.first-Comments');
+            if (box) {
+                box.removeEventListener("click", handleBoxClick);
+            }
+            slideBox.style.display = "none";
+        }
+    }, 2);
 }
 
-updateSlideBoxHeight(); // Call immediately on load
+function handleCommentsClick() {
+    slideBox.style.display = "block";
+    title_info.style.paddingLeft = "0px";
+    title_info.style.paddingRight = "0px";
+}
 
-// Optional: Update on resize
+function handleBoxClick() {
+    slideBox.style.display = "none";
+    title_info.style.paddingLeft = "";
+    title_info.style.paddingRight = "";
+}
+
+// Initial setup
+updateSlideBoxHeight();
+
+// Update on resize
 window.addEventListener('resize', updateSlideBoxHeight);
-
-// window.addEventListener('resize', ()=> {
-// setTimeout(() => {
-//   const slideBox = document.querySelector('.cover-box');
-//   slideBox.style.minHeight = `${remainingPx}px`;
-//   slideBox.style.overflowY = 'auto';
-// }, 2);
- 
-// });
 
 
 
@@ -468,6 +462,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const cancelButton = document.querySelector('.cancel1');
   const commentButton = document.querySelector('.comment1');
   const availableComments = document.querySelector('.available-comments1');
+  // let profile = document.querySelector(".Profile-logo")
+  // profile.style.width = "20px";
+
+  const tempContainer = document.createElement('div');    
+  const profile1 = localStorage.getItem("profile");
+  tempContainer.innerHTML = profile1;
+  // console.log(tempContainer.innerHTML);
+
+  let profile = tempContainer.firstChild
+  profile.className = "logo"
+  console.log(profile);
+
+
 
   // Function to clear the input field
   function clearComment() {
@@ -479,12 +486,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const comment = inputField.value.trim();
     if (comment) {
       // Create a new comment element
+      const commentElementBox = document.createElement('div');
+      commentElementBox.className = "commentElementBox"
+      // commentElement.appendChild(tempContainer.innerHTML)
       const commentElement = document.createElement('div');
       commentElement.classList.add('comment-item');
       commentElement.textContent = comment;
 
+
+
+      commentElementBox.appendChild(profile.cloneNode(true))
+      commentElementBox.appendChild(commentElement);
+      // commentElementBox.insertBefore(commentElement,profile.nextSibling)
+
       // Append the new comment to the available-comments section
-      availableComments.appendChild(commentElement);
+      availableComments.appendChild(commentElementBox);
+      // availableComments.appendChild(commentElement);
 
       // Clear the input field after adding the comment
       inputField.value = '';

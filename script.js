@@ -253,5 +253,13 @@ localStorage.setItem('array',  JSON.stringify(array));
 console.log(array);
 
 
+let profile1 = document.querySelector(".Profile-logo")
+localStorage.setItem('profile', profile1.outerHTML);
+
+// console.log("Profile1");
+// console.log(profile1);
+
+
+
 
 // const storedContainer = localStorage.getItem("suggestion_video");
