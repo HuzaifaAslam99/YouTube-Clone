@@ -89,6 +89,7 @@
     display: flex ;
     flex-direction: column;
     /* background-color: red; */
+    /* background-color: blue; */
     height: auto;
 }
 .Title{
@@ -266,7 +267,9 @@
 
 .comments{
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    /* height: 300px; */
+    height: 45vh;
     /* background-color: rgb(52, 51, 51); */
     background-color: var(--share-like-background);
     margin-top: 20px;
@@ -341,6 +344,9 @@ input.text {
     word-wrap: break-word;
     font-size: 14px;
     margin-top: 10px;
+    height: 60%;
+    overflow-y: auto;
+    /* background-color: red; */
 }
 
 ::-webkit-scrollbar {

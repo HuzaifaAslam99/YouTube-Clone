@@ -13,10 +13,13 @@
     }
     
 .left-new {
+    --width2: 65vw;
+    --percentage2: calc(var(--width2)/900);
     width: 70vw;
     /* overflow-y: auto; */
     display: flex;
     justify-content: center;
+    /* height: calc(var(--percentage2)*150); */
     /* align-items: center; */
     /* padding: 0px 20px 0px 20px; */
     /* position: sticky; */
@@ -24,9 +27,10 @@
 }
 
 .package {
-    --width2: 65vw;
-    --percentage2: calc(var(--width2)/900);
+    /* --width2: 65vw;
+    --percentage2: calc(var(--width2)/900); */
     width: var(--width2);
+    /* height:  */
     /* margin-top: 100px; */
     /* margin-top: calc(var(--percentage2)*100); */
     /* padding: 0px calc(var(--percentage2)*10) calc(var(--percentage2)*100) calc(var(--percentage2)*10); */
@@ -160,7 +164,7 @@
     margin-top: calc(var(--percentage2)*30);
     /* margin-top: 60px; */
     /* margin-top: 0px; */
-
+    /* height: calc(var(--percentage2)*300); */
     border-radius: 30px;
     /* padding: calc(var(--percentage2)*10) calc(var(--percentage2)*20) calc(var(--percentage2)*10) calc(var(--percentage2)*20); */
     padding: 10px 20px 10px 20px;
