@@ -13,8 +13,8 @@
     }
     
 .left-new {
-    --width2: 65vw;
-    --percentage2: calc(var(--width2)/900);
+    /* --width2: 65vw;
+    --percentage2: calc(var(--width2)/900); */
     width: 70vw;
     /* overflow-y: auto; */
     display: flex;
@@ -27,8 +27,8 @@
 }
 
 .package {
-    /* --width2: 65vw;
-    --percentage2: calc(var(--width2)/900); */
+    --width2: 65vw;
+    --percentage2: calc(var(--width2)/900);
     width: var(--width2);
     /* height:  */
     /* margin-top: 100px; */
