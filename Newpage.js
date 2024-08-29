@@ -166,8 +166,8 @@ function Click() {
               let viewportHeight = window.innerHeight;
               let remainingPx = viewportHeight - heightPx;
       
-              slideBox.style.minHeight = `${remainingPx}px`;
-              slideBox.style.overflowY = 'auto';
+              slideBox.style.height = `${remainingPx}px`;
+              // slideBox.style.overflowY = 'auto';
       
               if (window.innerWidth <= 850) {
                   // Add event listeners only if they are not already attached

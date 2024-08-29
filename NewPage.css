@@ -379,7 +379,8 @@ input.text {
     position: absolute;
     /* padding: calc((var(--pecentage2)*10)); */
     padding: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow: hidden;
     /* bottom: 0%; */
 }
 
@@ -459,8 +460,10 @@ input.text1{
     margin-top: 10px;
     width: 100%;
     /* word-wrap: break-word; */
+    height: 75%;
     font-size: 14px;
     color: var(--text-color);
+    overflow-y: auto;
     /* background-color: red; */
 }
 
@@ -475,7 +478,7 @@ input.text1{
     /* overflow-wrap: break-word; */
     margin-bottom:  10px;
     /* background-color: blue; */
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
 
     /* white-space: wrap; */
 }
