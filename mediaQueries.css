@@ -1,7 +1,6 @@
 @media (max-width: 1530px) {
     .video2 {
         --width: 25vw;
-        /* --width: 360px; */
         width: var(--width);
         --percentage: calc(var(--width)/400);
         height: calc(var(--percentage)*320);
@@ -37,7 +36,6 @@
     }
     .title{
         font-size: calc(var(--percentage)*17);
-        /* font-weight: calc(var(--percentage)*700); */
         font-weight: 800;
     }
     .channel-name{
@@ -65,13 +63,11 @@
 
 @media (max-width: 1410px) {
     .video2 {
-        /* --width: 330px; */
         --width: 25vw;
     }
 }
 @media (max-width: 1330px) {
     .video2 {
-        /* --width: 300px; */
         --width: 25vw;
     }
     .option{
@@ -84,7 +80,6 @@
 @media (max-width: 1240px){
     .home-shorts{
         height: 18vh;
-        /* background-color: blueviolet; */
     }
     .icon-home {
         width: 21.6px;
@@ -96,7 +91,6 @@
         width: 21.6px;
       }
       .icon{
-        /* background-color: red; */
         gap: 18px;
         margin-left: 15px;
         padding-left: 10px;
@@ -118,7 +112,6 @@
         height: 30vh;
       }
       .icon2{
-        /* background-color: aqua; */
         gap: 9px;
         margin-left: 13.5px;
         padding-left: 9px;
@@ -145,7 +138,6 @@
 
 @media (max-width: 1178px) {
     .video2 {
-        /* --width: 270px; */
         --width: 25vw;
     }
     .watch-options{
@@ -203,8 +195,6 @@
         height: 31.5px;
         font-weight: 300;
         font-size: 19.8px;
-        /* font-size: 22.5px; */
-        /* line-height: 31.5px; */
     }
 }
 
@@ -213,27 +203,15 @@
         gap: 13px;
         margin-left: 13px;
         padding-left: 9px;
-        /* border-radius: 5px;
-        height: 30px; */
         width: 135px;
     }
     .icon2{
         gap: 13px;
         margin-left: 13px;
         padding-left: 9px;
-        /* border-radius: 5px;
-        height: 30px; */
         width: 135px;
     }
-    /* .left{
-        overflow-y: auto;
-        position: sticky;
-        position: relative;
-        left: 0%;
-    } */
-    /* .videos-box{
-        width: 85vw;
-    } */
+
 }
 
 @media (max-width: 1071px) {
@@ -243,8 +221,8 @@
     .watch-options{
         height: 34px;
         margin: 0px 30px;
-        overflow-x: scroll; /* Allow horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        overflow-x: scroll; 
+        -webkit-overflow-scrolling: touch;
         scrollbar-width: none; 
         gap: 10px;
         
@@ -269,16 +247,8 @@
         color: white;
         font-size: 17.6px;
     }
-    .left{
-        /* overflow-y: auto;
-        position: sticky; */
-        /* position: relative;
-        left: 0%;
-        display: block; */
-    }
-    /* .videos-box{
-        width: 85vw;
-    } */
+
+
 }
 
 @media (max-width: 1040px){
@@ -303,18 +273,13 @@
         display: none;
     }
     .hamburger{
-        pointer-events: auto; /* Re-enables clicking */
+        pointer-events: auto;
         cursor: pointer;
     }
     .title{
-        /* font-size: calc(var(--percentage)*17); */
-        /* font-weight: calc(var(--percentage)*700); */
         font-weight: 700;
     }
-    /* .cross-icon{
-        width: 35px;
-        margin: auto 25px;
-      } */
+
 }
 
 @media (max-width: 965px) {
@@ -345,7 +310,6 @@
     }
     .notification-signin{
         width: 160px;
-        /* background-color: greenyellow; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -365,9 +329,16 @@
     .youtube{
         margin-left: 6vw;
     }
-    .video2{
-        --width: 42vw;
+    .videos-box{
+       padding-left: 0px;
+       padding-right: 0px;
     }
+    .video2{
+        --width: 46vw;
+    }
+    .watch-options{
+        margin: 0px 10px;
+      }
     .menu-bar{
         display: block;
         display: flex;
@@ -375,8 +346,6 @@
         justify-content: space-around;
     }
     .title{
-        /* font-size: calc(var(--percentage)*17); */
-        /* font-weight: calc(var(--percentage)*700); */
         font-weight: 600;
     }
 }
@@ -384,106 +353,63 @@
 @media (max-width: 700px){
     .notification-signin{
         width: 130px;
-        /* background-color: greenyellow; */
         gap: 5vw;
     }
 }
 
 @media (max-width: 560px){
-    /* .videos-box{
-        padding-bottom: 220px;
-    } */
+
     .video2{
         --width: 100vw;
-        /* margin-left: 0px;
-        margin-right: 0px; */
-        /* gap: 0px; */
         display: flex;
         justify-content: center;
-        /* min-height: calc(var(--percentage)*100); */
-        /* min-height: calc(var(--percentage)*220); */
         height: auto;
         gap: calc(var(--percentage)*10);
-        /* background-color: aqua; */
         margin-top: 0px;
         margin-bottom: 0px;
     }
     .watch-options{
         margin: 0px 10px;
-        /* margin-right: 0px;
-        margin-left: 10px;       */
       }
     .home{
         height: 60px;
     }
     .videos-box{
         padding-top: 20px; 
-        /* gap: calc(var(--percentage)*0); */
-        /* gap: 5px; */
         height: auto;
-        /* background-color: blue; */
         padding-bottom: 140px;
-        /* gap: 20px; */
-        /* gap: calc(var(--percentage)*120); */
     }
     .titles-list-box{
         display: flex;
-        /* width: var(--width); */
-        /* height:  calc(var(--percentage)*70); */
         height:  auto;
-        /* background-color: green; */
         align-items: flex-start 
     }
     .titles-list{
-        /* height: calc(var(--percentage)*70); */
         height: auto;
-        /* background-color: brown; */
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
-        /* margin: 0px calc(var(--percentage)*5); */
         gap: calc(var(--percentage)*3);
-        /* gap: calc(var(--percentage)*0); */
-        /* justify-content: space-around; */
     }
-    .name-view-week{
-        /* background-color: aqua; */
-    }
+
     .title{
-        /* background-color: green; */
-        /* font-size: calc(var(--percentage)*16); */
         font-weight: 600;
         height: auto;
     }
     .title-3{
         height: auto;
-        /* height: calc(var(--percentage)*60); */
-        /* background: orange; */
-        /* width: calc(var(--percentage)*300); */
         width: calc(var(--percentage)*310);
-        /* gap:  */
         gap: calc(var(--percentage)*5);
-        /* gap: 0px; */
     }
-    .channel-logo-box{
-        /* background-color: aqua; */
-    }
-    .three-dots{
-        /* background-color: blue; */
-    }
+
     .name-view-week{
         height: auto;
-        /* background-color: red; */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         gap: calc(var(--percentage)*20);
-        /* gap: calc(var(--percentage)*0); */
     }
     .channel-name{
-        /* background-color: aqua; */
-        /* width: 50%;  */
         width: auto;     
     }
 }
@@ -504,7 +430,6 @@
     .menu-bar{
         width: 100vw;
         height: 60px;
-        /* background-color: red; */
     }
     .word-bottom{
         font-size: 15px;
@@ -535,19 +460,15 @@
         font-size: 13px;
         font-weight: 300;
     }
-    /* .icon-bottom{
-        background-color: red;
-    } */
+
     .icon-home-bottom{
         width: 22px;
     }
     .icon-short-bottom{
-        /* height: 25px; */
         width: 20px;
     }
     .icon-subscription-bottom{
         width: 30px;
-        /* height: 18px; */
     }
     .icon-playlist-bottom{
         width: 18px;
@@ -557,11 +478,8 @@
 @media (max-width: 330px){
     .watch-options{
         height: 30px;
-        /* margin: 0px 20px; */
         margin: 0px 5px;
-        /* margin-left: 5px; */
-        gap: 8px;
-        
+        gap: 8px;    
       }
       .option{
         padding: 5px;
@@ -588,9 +506,7 @@
         gap: 4vw;
     }
       .Search-icon{
-        /* display: block; */
         width: 21px;
-        /* color:var(--text-color); */
       }
       .Profile-logo{
         width: 21px;
@@ -607,102 +523,31 @@
         width: 22px;
     }
 }
- /* @media (max-height: 1140px) and (min-aspect-ratio: 1.01/1) { */
- /* @media (min-aspect-ratio: 1.01/1) { */
-/* @media (max-height: 1140px) and (orientation: landscape) { */
-    /* .left{
-        overflow-y: auto;
-        position: sticky;
-        position: absolute;
-        left: -100%;
-    }   
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .videos-box{
-        width: 100vw;
-        gap: auto;
-        display: flex;
-        flex-wrap: none;
-        justify-content: center;
-    }
-    .video2 {
-        --width: 29vw;
-    }
-} */
 
-@media (max-height: 600px) and (min-aspect-ratio: 1.01/1) {
-/* @media (max-height: 600px) and (max-width: 1.01/1) { */
-    .left{
-        overflow-y: auto;
-        position: sticky;
-        position: absolute;
-        left: -100%;
-    }   
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .videos-box{
-        width: 100vw;
-        gap: auto;
-        display: flex;
-        flex-wrap: none;
-        justify-content: center;
-    }
-    .video2 {
-        --width: 29vw;
-    }
-    .full-yt{
-        width: 150px;
-        /* background-color: brown; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .youtube{
-        /* background-color: brown; */
-        /* margin-left: 6vw; */
-    }
-    .hamburger{
-        display: none;
-    }
-    .menu-bar{
-        width: 100vw;
-        height: 60px;
-        display: block;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        /* background-color: red; */
-    }
-    .word-bottom{
-        font-size: 20px;
-        font-weight: 500;
-    }
-    .icon-home-bottom{
-        width: 30px;
-    }
-    .icon-short-bottom{
-        height: 25px;
-        width: 25px;
-    }
-    .icon-subscription-bottom{
-        width: 25px;
-        height: 25px;
-    }
-    .icon-playlist-bottom{
-        width: 25px;
-    }
-}
 
-@media (max-height: 600px) and (max-width: 770px) {
+
+/* @media (max-height: 600px) and (max-width: 770px) {
     .video2 {
         --width: 42vw;
     }
-}
-
-@media (max-height: 600px) and (max-width: 500px) {
+} */
+@media (max-width: 600px) {
     .video2 {
-        --width: 90vw;
+        --width: 100vw;
+        border-radius: 0px;
+    }
+    .thumbnail-images{
+        border-radius: 0px;
     }
 }
+
+/* @media (max-height: 600px) and (max-width: 500px) {
+
+    .video2 {
+        --width: 100vw;
+        border-radius: 0px;
+    }
+    .thumbnail-images{
+        border-radius: 0px;
+    }
+} */

@@ -1,6 +1,5 @@
 const savedTheme = localStorage.getItem('theme');
 document.documentElement.setAttribute('data-theme', savedTheme);
-console.log(savedTheme);
 
 let check = false;
 let capital;
@@ -10,17 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentTheme;
     currentTheme = document.documentElement.getAttribute('data-theme');
-    // if (savedTheme) {
-    // const savedTheme = localStorage.getItem('theme');
-    // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
-    // currentTheme = document.documentElement.setAttribute('data-theme', savedTheme);
-    // console.log(savedTheme);
-    // }
+
     if (!currentTheme) {
         currentTheme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
     }
-    console.log(currentTheme)
 
     function updateAppearanceText(currentTheme) {
         let appearanceWord;
@@ -98,10 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const divs = document.querySelectorAll('.appearance');
         const options = document.querySelector('.options');
 
-        // options.addEventListener('click', (event) => {
-        //     event.stopPropagation();
-        // });
-
         let currentTheme;
         currentTheme = document.documentElement.getAttribute('data-theme');
         if (!currentTheme) {
@@ -171,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (divs[1]) {
             divs[1].addEventListener('click', () => {
-                // alert('Hi');
+
                 options.innerHTML =
                     `<div class="input-Heading">
             <span class="word-input">Enter Username</span>
@@ -192,15 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     inputValue = document.querySelector(".enter")
                     const username = inputValue.value.trim();
 
-
-                    console.log(username);
-
                     capital = (username.charAt(0)).toUpperCase()
-                    console.log(capital);
 
                     logo.innerHTML = capital
 
-                    console.log(logo.innerHTML);
                     options.remove();
 
                     check = true;
@@ -208,8 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (check) {
                         let profile1 = document.querySelector(".Profile-logo")
                         localStorage.setItem('profile', profile1.outerHTML);
-                        console.log("Profile1");
-                        console.log(profile1);
 
                     }
                 })
@@ -237,9 +219,6 @@ let left1 = document.querySelector(".left");
 
 function applyHamburgerStyles() {
     if ((window.innerWidth > 1040)) {
-        // left1.style.position = "relative";
-        // left1.style.left = "0%";
-        // left1.style.width = "15vw"
 
         left1.style.position = "";
         left1.style.left = "";
@@ -288,16 +267,13 @@ let array = []
 video.forEach(element => {
     array.push({
         InnerHTML: element.innerHTML,
-        videoData: element.getAttribute("video-data") // Store the attribute value
+        videoData: element.getAttribute("video-data")
     });
 });
 
 localStorage.setItem('array', JSON.stringify(array));
-console.log(array);
-
 
 const profileReceived = localStorage.getItem("profile");
-console.log("Profile Received: "+profileReceived);
 
 if (profileReceived) {
     const tempContainer = document.createElement('div');
@@ -312,9 +288,6 @@ if (!check & !profileReceived) {
 
     let profile1 = document.querySelector(".Profile-logo")
     localStorage.setItem('profile', profile1.outerHTML);
-
-    console.log("Profile1");
-    console.log(profile1);
 
 }
 

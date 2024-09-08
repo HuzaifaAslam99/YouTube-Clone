@@ -7,13 +7,9 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
-/* :root[data-theme='light']{
-  --background-color: #ffffff;
-  --text-color: #000000;
-} */
+
 :root{
   --background-color: #ffffff;
-  /* --background-color: #faf7f7; */
   --text-color: #000000;
   --scroll-background-color: rgb(234, 224, 224);
   --scroll-inner-color: rgb(139, 137, 137);
@@ -24,7 +20,6 @@ html{
 }
 
 :root[data-theme='dark'] {
-  /* --background-color: #000000; */
   --background-color: #141010;
   --text-color: #ffffff;
   --scroll-background-color: rgb(52, 51, 51);
@@ -32,7 +27,6 @@ html{
   --share-like-background:  rgb(93, 91, 91, 0.4);
   --subscribe-color: #e9e7e7;
   --arrow-div: rgb(231, 225, 225);
-  /* --comment-box: rgb(52, 51, 51); */
   --comment-box: rgb(28, 27, 27);
 
 }
@@ -50,19 +44,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: blue; */
-    /* background-color: var( --background-color); */
 }
 
 .yt-hamburger{
-    /* background-color: pink; */
     display: flex;
     align-items: center;
     width: 200px;
 }
 .cross-icon{
-  /* width: 30px;
-  margin: auto 22px; */
   width: 35px;
   margin: auto 25px;
   color:var(--text-color);
@@ -71,20 +60,12 @@ body {
 }
 .hamburger{
     color:var(--text-color);
-    /* fill: var(--text-color); */
-    /* background-color: var(--text-color); */
     width: 40px;
-    /* height: 60px; */
     margin: auto 27px;
-    /* cursor: not-allowed; */
-    /* opacity: 0.5; */
     pointer-events: none;
 }
-/* .hamburger:hover{
-   
-} */
+
 .full-yt{
-    /* background-color: pink; */
     width: 200px;
     height: 30px;
     display: flex;
@@ -116,7 +97,6 @@ body {
     font-weight: 500;
 }
 .search-input{
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -130,7 +110,6 @@ body {
     border: 1px solid white;
     padding-left: 20px;
     font-size: 15px;
-    /* color:var(--text-color); */
     color:var(--background-color);
 }
 .input::placeholder{
@@ -143,7 +122,6 @@ body {
 }
 .notification-signin{
     width: 200px;
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -170,9 +148,7 @@ body {
     font-family: "Roboto", sans-serif;
     cursor: pointer;
 }
-.Profile-logo:hover{
 
-}
 .Search-icon{
   display: none;
 }
@@ -191,7 +167,6 @@ body {
 }
 .home-shorts{
     height: 18vh;
-    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -200,22 +175,18 @@ body {
     width: 24px;
     fill: var(--text-color); 
     color:var(--text-color);
-    /* background-color: blue; */
   }
   .icon-short{
     width: 24px;
     fill: var(--text-color); 
     color: var(--text-color);  
-    /* background-color: red; */
   }
   .icon-subscription{
     width: 24px;
     fill: var(--text-color); 
     color: var(--text-color);
-    /* background-color: blue; */
   }
   .icon{
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -223,7 +194,6 @@ body {
     padding-left: 11px;
     border-radius: 5px;
     height: 30px;
-    /* width: 140px; */
     width: 170px;
     cursor: pointer;
   }
@@ -242,14 +212,11 @@ body {
 
   .you{
     height: 30vh;
-    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* gap: 10px; */
   }
   .icon2{
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -258,7 +225,6 @@ body {
     border-radius: 5px;
     height: 30px;
     width: 170px;
-    /* width: 140px; */
     cursor: pointer;
   }
   .icon2:hover{
@@ -283,14 +249,10 @@ body {
   .icon-playlist{
     width:24px;
     color: var(--text-color);
-    /* fill: white; */
   }
   .explore{
-    /* height: 30vh; */
     height: 36vh;
-    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* gap: 10px; */
   }

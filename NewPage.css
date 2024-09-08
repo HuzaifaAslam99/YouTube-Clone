@@ -19,40 +19,13 @@
   }
 
 .body{
-  /* height: 100vh !important; */
-  /* overflow: hidden; */
-  /* background-color: var(--background-color);
-  overflow: auto;
-  width: 100vw;
-  height: auto; */
-  /* overflow-y: auto; */
-  /* background-color: blue; */
-
-  /* height: auto; */
   height: 100vh;
   width: 100%;
-  /* overflow-y: auto; */
   overflow: hidden;
-  /* overflow-y: hidden; */
-
 }
 .container{
-    /* background-color: blue; */
-/* 
-    display: flex;
-    justify-content: center !important; 
-    width: 100vw;
-    overflow: hidden;
-    height: auto ;
-    height: 100vh; */
     overflow: auto;
-    /* height: auto; */
-
-    /* height: 100vh; */
-    /* height: 100vh; */
-    /* height: 100%; */
     width: 100%;
-    /* overflow-y: auto; */
     display: flex;
 }
 
@@ -62,8 +35,6 @@
     display: flex;
     justify-content: flex-end;
     height: 150vh;
-    /* height: auto; */
-    /* overflow: hidden; */
 }
 
 
@@ -73,9 +44,6 @@
     display: flex;
     flex-direction: column;
     padding: 0px 10px 100px 0px;
-    /* overflow-y: auto; */
-    /* background-color: red; */
-
 }
 
 .video-play {
@@ -88,8 +56,6 @@
     font-family: "Roboto", sans-serif;
     display: flex ;
     flex-direction: column;
-    /* background-color: red; */
-    /* background-color: blue; */
     height: auto;
 }
 .Title{
@@ -103,37 +69,24 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     pointer-events: none;
-    /* background-color: red; */
-
 }
 .channel-subscribe-download{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* padding: 10px 0px; */
    height: 40px;
-   /* background-color: green; */
    height: auto;
-   /* padding-bottom: 30px; */
-   /* display: flex;
-   flex-direction: column; */
-   /* flex-wrap: wrap; */
-   /* background-color: #FF0000; */
 }
 .channel-subscribe{
    width: auto;
    display: flex;
    align-items: center;
    gap: 15px;
-   /* background-color: aqua; */
-   /* background-color: #FF0000; */
 }
 .channel-img-name-subscribers{
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     gap: 10px;
-    /* background-color: green; */
 }
 .Channel-Logo{
     width: 40px;
@@ -145,7 +98,6 @@
     justify-content: center;
     align-items: flex-start;
     max-width: 15vw;
-    /* background-color: blue; */
 }
 
 .Channel-Name{
@@ -155,8 +107,7 @@
    -webkit-line-clamp: 1; 
    -webkit-box-orient: vertical; 
    text-overflow: ellipsis ;
-   /* white-space: nowrap; */
-   width: 100%; /* or a fixed width if necessary */
+   width: 100%; 
    display: block;
 
 }
@@ -170,7 +121,6 @@
    border-radius: 30px;
    font-weight: 500;
    color: var(--background-color);
-   /* background-color: #FF0000; */
    background-color: var(--subscribe-color);
 }
 
@@ -180,9 +130,6 @@
     display: flex;
     align-items: center;
     height: 40px;
-    /* background-color: aqua; */
-    /* opacity: 0.5; */
-    /* background-color: rgb(115, 115, 179); */
     gap: 10px;
 }
 .like-dislike{
@@ -193,18 +140,16 @@
     padding: 10px;
     gap: 10px;
     height: 40px;
-    /* opacity: 0.5; */
 }
 .Like{
    width: 30px;
    color: var(--text-color);
-   /* position: relative;
-   z-index: 1; */
-
+   cursor: pointer;
 }
 .Dislike{
     width: 30px;
     color: var(--text-color);
+    cursor: pointer;
 }
 .vertical-line{
     height: 25px;
@@ -217,7 +162,6 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    /* background-color: blue; */
     height: 40px;
     gap: 10px;
 }
@@ -235,14 +179,11 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    /* background-color: blue; */
     height: 40px;
     gap: 5px;
-    /* background-color: blue; */
 }
 .download{
     width: 30px;
-    /* color: var(--text-color); */
     color: var(--text-color);
 }
 
@@ -256,7 +197,6 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    /* background-color: blue; */
     height: 40px;
     gap: 10px;
 }
@@ -267,34 +207,21 @@
 
 .comments{
     width: 100%;
-    /* height: auto; */
-    /* height: 300px; */
     height: 45vh;
-    /* background-color: rgb(52, 51, 51); */
     background-color: var(--share-like-background);
     margin-top: 20px;
-    /* margin-top: 0px; */
-
     border-radius: 30px;
     padding: 10px 20px 10px 20px;
-    /* pointer-events: none; */
-    /* margin-bottom: 30px;  */
-    /* background-color: blue; */
-
 }
 .heading{
     width: 100%;
     color: var(--text-color);
-    /* color: white; */
     font-size: 18px;
-    /* background-color: blue; */
 }
 .input-container{
    height: auto;
    width: 100%;
-   /* background-color: blue; */
    margin-top: 10px;
-   /* pointer-events: auto; */
 }
 .text{
    width: 100%;
@@ -310,18 +237,15 @@
 }
 .text::placeholder{
     color: var(--text-color);
-    /* color: white; */
     font-size: 14px;
 }
 input.text {
-    /* color: white; */
     color: var(--text-color); 
     padding-left: 10px;
     font-size: 14px;
 }
 .actions{
     margin-top: 10px;
-    /* background-color: red; */
     display: flex;
     justify-content: flex-end;
     gap: 5px;
@@ -346,7 +270,6 @@ input.text {
     margin-top: 10px;
     height: 60%;
     overflow-y: auto;
-    /* background-color: red; */
 }
 
 ::-webkit-scrollbar {
@@ -383,11 +306,8 @@ input.text {
     background-color: var(--comment-box);
     width: 100%;
     position: absolute;
-    /* padding: calc((var(--pecentage2)*10)); */
     padding: 10px;
-    /* overflow-y: auto; */
     overflow: hidden;
-    /* bottom: 0%; */
 }
 
   
@@ -399,25 +319,20 @@ input.text {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: red; */
 }
 .heading1{
     width: 100%;
     font-size: 18px;
     color: var(--text-color)
-    /* background-color: blue; */
 }
 .Arrow-Down{
     width: 30px;
     height: 30px;
     color: var(--text-color);
-    /* background-color: green; */
 }
 .input-container1{
-   /* display: none; */
    height: auto;
    width: 100%;
-   /* background-color: blue; */
    margin-top: 10px;
 }
 .text1{
@@ -431,7 +346,6 @@ input.text {
 
 }
 .text1::placeholder{
-    /* padding-left: 10px; */
     font-size: 14px;
     color: var(--text-color);
 }
@@ -442,7 +356,6 @@ input.text1{
 
 .actions1{
     margin-top: 10px;
-    /* background-color: red; */
     display: flex;
     justify-content: flex-end;
     gap: 10px;
@@ -465,12 +378,10 @@ input.text1{
 .available-comments1{
     margin-top: 10px;
     width: 100%;
-    /* word-wrap: break-word; */
     height: 75%;
     font-size: 14px;
     color: var(--text-color);
     overflow-y: auto;
-    /* background-color: red; */
 }
 
 
@@ -480,13 +391,7 @@ input.text1{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    /* word-wrap: break-word; */
-    /* overflow-wrap: break-word; */
     margin-bottom:  10px;
-    /* background-color: blue; */
-    /* word-wrap: break-word; */
-
-    /* white-space: wrap; */
 }
 
 .commentElementBox1{
@@ -495,21 +400,13 @@ input.text1{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    /* word-wrap: break-word; */
-    /* overflow-wrap: break-word; */
     margin-bottom:  10px;
-    /* background-color: blue; */
-    /* white-space: wrap; */
 }
 
 .comment-item{
     width: 95%;
-    /* background-color: red; */
-    /* display: flex; */
     align-self: flex-end;
     word-wrap: break-word;
-    /* overflow-wrap: break-word; */
-
 }
 .comment-item1{
     word-wrap: break-word;
@@ -530,5 +427,4 @@ input.text1{
     font-weight: 200;
     font-family: "Roboto", sans-serif;
     margin-right: 10px;
-    /* cursor: pointer; */
 }

@@ -3,14 +3,6 @@ let tempDiv;
 let id1;
 let arrayID = [];
 
-// window.onload = function() {
-//   const savedTheme = localStorage.getItem('theme');
-//   if (savedTheme) {
-//       document.documentElement.setAttribute('data-theme', savedTheme);
-//       console.log("saved Theme");
-
-//   }
-// };
 
 
 function Click() {
@@ -20,31 +12,25 @@ function Click() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       document.documentElement.setAttribute('data-theme', savedTheme);
-      console.log(savedTheme);
+      // console.log(savedTheme);
     }
     else {
-      console.log("not");
+      // console.log("not");
 
     }
 
     const storedContainer = localStorage.getItem("video");
-    // console.log(storedContainer);    
-    // console.log("--------------");
 
     const tempContainer = document.createElement('div');
     tempContainer.innerHTML = storedContainer;
 
-    // console.log(tempContainer.innerHTML);
 
     parsedElement = tempContainer.firstElementChild;
-    // console.log(parsedElement);
 
     const channel_logo = parsedElement.children[1].children[0].children[0].firstElementChild;
-    // console.log(channel_logo);
 
-    // const check = parsedElement.querySelector("div > :nth-child(2) > :nth-child(3)");
     channel_logo.className = "Channel-Logo";
-    // check.classList.add("Channel-Logo"); 
+
     const wow = document.querySelector(".channel-img-name-subscribers")
     const referenceElement = wow.querySelector(".channel-name-subscribers");
     wow.insertBefore(channel_logo, referenceElement);
@@ -68,14 +54,10 @@ function Click() {
     let comments = document.querySelector(".comments");
     let arrow_down = document.querySelector(".arrow-down");
     let title_info = document.querySelector(".title-info");
-    // if (channel_title) {
-    console.log("Title element found:", channel_title);
 
     channel_title.addEventListener("click", () => {
-      console.log("Clicked Title");
 
       channel_title.style.display = "none";
-
 
       channel_subscribe.style.display = "none";
       comments.style.display = "none";
@@ -134,8 +116,6 @@ function Click() {
     ];
     //videos/Best of Rafael Nadal Australian Open.mp4
     const img = parsedElement
-    // console.log(img);
-    // console.log(video_array);
 
     const imageId = img.getAttribute("video-data");
     // console.log(imageId)
@@ -149,7 +129,7 @@ function Click() {
       videoElement.src = videoData.path
       const referenceElement4 = package.querySelector(".title-info");
       package.insertBefore(videoElement, referenceElement4)
-      // console.log(videoData.path)
+
       videoElement.controls = true;
       // videoElement.play();
 
@@ -159,25 +139,21 @@ function Click() {
       let title_info = document.querySelector(".title-info");
       
       function updateSlideBoxHeight() {
-          // setTimeout(() => {
-              // let video = document.querySelector('.video-play');
-              // let heightPx = video ? video.offsetHeight : 0;
+
               let heightPx = videoElement.offsetHeight;
               let viewportHeight = window.innerHeight;
               let remainingPx = viewportHeight - heightPx;
       
               slideBox.style.height = `${remainingPx}px`;
-              // slideBox.style.overflowY = 'auto';
       
               if (window.innerWidth <= 850) {
-                  // Add event listeners only if they are not already attached
                   comments.addEventListener("click", handleCommentsClick);
                   const box = document.querySelector('.first-Comments');
                   if (box) {
                       box.addEventListener("click", handleBoxClick);
                   }
               } else {
-                  // Remove event listeners if the width is greater than 850px
+
                   comments.removeEventListener("click", handleCommentsClick);
                   const box = document.querySelector('.first-Comments');
                   if (box) {
@@ -200,10 +176,8 @@ function Click() {
           title_info.style.paddingRight = "";
       }
       
-      // Initial setup
       updateSlideBoxHeight();
-      
-      // Update on resize
+
       window.addEventListener('resize', updateSlideBoxHeight);
 
 
@@ -215,9 +189,6 @@ function Click() {
       subscribers.className = "subscribers"
       channel_subscribers.appendChild(subscribers)
 
-      // subscribers.addEventListener('click', (e) => {
-      //   console.log("Clicked Video");
-      // });
     }
 
 
@@ -232,11 +203,9 @@ function Click() {
       { id: "cro vs den", sub: "21.5M subscribers", path: "videos/Croatia vs Denmark.mp4" },
       { id: "ronaldo", sub: "40M subscribers", path: "videos/ronaldo.mp4" },
     ];
-    // console.log(parsedElement);
 
     id1 = parsedElement.getAttribute('video-data')
-    // console.log(id1);
-    // let Clicked_suggession = []
+
     video1_array.forEach(element => {
       if (element.id !== id1) {
         new_array.push(element.id);
@@ -247,33 +216,18 @@ function Click() {
     let count = 1;
     let array0 = []
 
-    // if (storedArray) {
     storedArray.forEach((content, index) => {
       if (content.videoData !== id1) {
         tempDiv = document.createElement('div');
         tempDiv.innerHTML = content.InnerHTML
         tempDiv.className = "suggestion-content-box"
 
-        // console.log(content.videoData);
-        // console.log(content);
-
-        // console.log(su);
-
-
-
-        // const parentId = `${index + 1}`;
         const parentId = `${count}`;
         tempDiv.id = parentId;
         tempDiv.setAttribute("video-data", content.videoData)
 
         const parent1 = document.getElementById(parentId);
-        console.log(`Attempting to find element with ID: ${parentId}`);
         const ReferenceElement = parent1.querySelector(".suggestion-logo-channel-name-view-week")
-        // console.log(ReferenceElement);
-
-        // console.log(ReferenceElement);
-
-        // console.log(tempDiv.innerHTML);
 
         const img = tempDiv.children[0]
         img.className = "suggestion-thumbnail"
@@ -282,76 +236,45 @@ function Click() {
         const Title = tempDiv.children[0].children[0].children[1].children[0]
         Title.className = "suggestion-title";
         const parent2 = parent1.children[1].children[0]
-        // console.log(parent2);
 
         const ReferenceElement2 = parent1.querySelector(".suggestion-channel-name-view-week")
         parent2.insertBefore(Title, ReferenceElement2)
 
 
         const channel_name = tempDiv.children[0].children[0].children[1].children[0].children[0]
-        // console.log(channel_name.innerHTML);
         channel_name.className = "suggestion-channel-name";
         const parent3 = parent1.children[1].children[0].children[1]
-        // console.log(parent3)
         const ReferenceElement3 = parent1.querySelector(".suggestion-view-week")
         parent3.insertBefore(channel_name, ReferenceElement3)
 
 
         const views = tempDiv.children[0].children[0].children[1].children[0].children[0].children[0]
-        // console.log(views.innerHTML);
         views.className = "suggestion-view";
         const parent4 = parent1.children[1].children[0].children[1].children[1]
-        // console.log(parent4);    
         const ReferenceElement4 = parent1.querySelector(".suggestion-dot")
         parent4.insertBefore(views, ReferenceElement4)
-        // console.log(tempDiv.innerHTML);
-
 
         const time = tempDiv.children[0].children[0].children[1].children[0].children[0].children[1]
-        // console.log(time);
         time.className = "suggestion-weeks";
         const parent5 = parent1.children[1].children[0].children[1].children[1]
-        // console.log(parent5);
 
         const ReferenceElement5 = parent1.querySelector(".suggestion-dot")
         parent5.insertBefore(time, ReferenceElement5.nextSibling)
 
 
         const channel_logo = tempDiv.children[0].children[0].children[0].firstElementChild
-        console.log(channel_logo);
         channel_logo.className = "Suggestion-Channel-Logo";
         const parent6 = parent1.children[1]
-        console.log(parent6);
         const ReferenceElement6 = parent1.querySelector(".suggestion-title-info")
         parent6.insertBefore(channel_logo, ReferenceElement6)
-
-        // const comments = tempDiv.children[0]
-
-        // console.log("Comments: "+comments)
-
-        // console.log(comments);
 
 
 
         count++;
         arrayID.push(tempDiv)
-        // content.video
 
         const suggestion_video5 = document.querySelector(".suggestion-content-box");
         suggestion_video5.setAttribute("video-data", content.videoData)
-
-
-        // console.log(suggestion_video5.getAttribute("video-data"));
-
-        //  array0.push(suggestion_video5.getAttribute("video-data"));
-
-        // array0.push(suggestion_video5)
-        // console.log(array0);
-        // for (const element of array0) {
-        //     console.log(element.getAttribute("video-data"));
-        // }
-        // console.log(tempDiv);
-        // tempDiv.className = "suggestion-content-box"
       }
     })
 
@@ -377,7 +300,6 @@ suggestion_videos.forEach(Clicked => {
 
     arrayID.forEach(element2 => {
       if (element2.id === tempDivID) {
-        console.log(tempDivID);
 
         let array = JSON.parse(localStorage.getItem('array'));
 
@@ -390,15 +312,10 @@ suggestion_videos.forEach(Clicked => {
             video.innerHTML = element3.InnerHTML;
 
             video.setAttribute("video-data", video3);
-
-            console.log(video.outerHTML);
             localStorage.setItem('video', video.outerHTML);
 
-            // Reload the page to reflect the changes in the stored video
-            // window.location.href = window.location.href;
             location.reload();
-            // const url = Clicked.getAttribute("data-url");
-            // window.location.href = url;
+
           }
         });
       }
@@ -413,7 +330,6 @@ tempContainer.innerHTML = profile1;
 
 let profile = tempContainer.firstChild
 profile.className = "logo"
-console.log(profile);
 
 const profile_logo = document.querySelector('.Profile-logo');
 
@@ -426,41 +342,32 @@ document.addEventListener('DOMContentLoaded', function () {
   const commentButton = document.querySelector('.comment');
   const availableComments = document.querySelector('.available-comments');
 
-  // Function to clear the input field
+
   function clearComment() {
-    inputField.value = ''; // Clear the input field
+    inputField.value = ''; 
   }
 
-  // Function to handle adding a comment
   function addComment() {
     const comment = inputField.value.trim();
     if (comment) {
-      // Create a new comment element
+
       const commentElementBox = document.createElement('div');
       commentElementBox.className = "commentElementBox"
-      // commentElement.appendChild(tempContainer.innerHTML)
       const commentElement = document.createElement('div');
       commentElement.classList.add('comment-item');
       commentElement.textContent = comment;
 
-
-
       commentElementBox.appendChild(profile.cloneNode(true))
       commentElementBox.appendChild(commentElement);
-      // commentElementBox.insertBefore(commentElement,profile.nextSibling)
-
-      // Append the new comment to the available-comments section
       availableComments.appendChild(commentElementBox);
-      // availableComments.appendChild(commentElement);
 
-      // Clear the input field after adding the comment
       inputField.value = '';
     } else {
-      console.log('No comment to add.');
+      // console.log('No comment to add.');
     }
   }
 
-  // Add event listeners
+  
   cancelButton.addEventListener('click', clearComment);
   commentButton.addEventListener('click', addComment);
 
@@ -471,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 window.addEventListener('load', function () {
-  const channel_subscribe = document.querySelector('.channel-subscribe-download'); // Change to your specific selector
+  const channel_subscribe = document.querySelector('.channel-subscribe-download'); 
 
   function updateStyles() {
     if (window.innerWidth > 850) {
@@ -480,72 +387,17 @@ window.addEventListener('load', function () {
       channel_subscribe.style.alignItems = "center";
       channel_subscribe.style.justifyContent = "space-between";
     } else {
-      // Optional: Reset styles if the width is less than or equal to 850px
-      channel_subscribe.style.display = ""; // or "none" if you want to hide it
+     
+      channel_subscribe.style.display = ""; 
       channel_subscribe.style.flexDirection = "";
       channel_subscribe.style.alignItems = "";
       channel_subscribe.style.justifyContent = "";
     }
   }
 
-  updateStyles(); // Run once on load
-  window.addEventListener('resize', updateStyles); // Run on resize
+  updateStyles();
+  window.addEventListener('resize', updateStyles); 
 });
-
-
-
-// let slideBox = document.querySelector('.cover-box');
-// let comments = document.querySelector('.comments');
-// let title_info = document.querySelector(".title-info");
-
-// function updateSlideBoxHeight() {
-//     setTimeout(() => {
-//         let video = document.querySelector('.video-play');
-//         // let heightPx = video ? video.offsetHeight : 0;
-//         let heightPx = video.offsetHeight;
-//         let viewportHeight = window.innerHeight;
-//         let remainingPx = viewportHeight - heightPx;
-
-//         slideBox.style.minHeight = `${remainingPx}px`;
-//         slideBox.style.overflowY = 'auto';
-
-//         if (window.innerWidth <= 850) {
-//             // Add event listeners only if they are not already attached
-//             comments.addEventListener("click", handleCommentsClick);
-//             const box = document.querySelector('.first-Comments');
-//             if (box) {
-//                 box.addEventListener("click", handleBoxClick);
-//             }
-//         } else {
-//             // Remove event listeners if the width is greater than 850px
-//             comments.removeEventListener("click", handleCommentsClick);
-//             const box = document.querySelector('.first-Comments');
-//             if (box) {
-//                 box.removeEventListener("click", handleBoxClick);
-//             }
-//             slideBox.style.display = "none";
-//         }
-//     }, 2);
-// }
-
-// function handleCommentsClick() {
-//     slideBox.style.display = "block";
-//     title_info.style.paddingLeft = "0px";
-//     title_info.style.paddingRight = "0px";
-// }
-
-// function handleBoxClick() {
-//     slideBox.style.display = "none";
-//     title_info.style.paddingLeft = "";
-//     title_info.style.paddingRight = "";
-// }
-
-// Initial setup
-// updateSlideBoxHeight();
-
-// Update on resize
-// window.addEventListener('resize', updateSlideBoxHeight);
-
 
 
 
@@ -555,19 +407,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const commentButton = document.querySelector('.comment1');
   const availableComments = document.querySelector('.available-comments1');
 
-  // Function to clear the input field
   function clearComment() {
-    inputField.value = ''; // Clear the input field
+    inputField.value = '';
   }
 
-  // Function to handle adding a comment
   function addComment() {
     const comment = inputField.value.trim();
     if (comment) {
-      // Create a new comment element
+
       const commentElementBox = document.createElement('div');
       commentElementBox.className = "commentElementBox1"
-      // commentElement.appendChild(tempContainer.innerHTML)
+
       const commentElement = document.createElement('div');
       commentElement.classList.add('comment-item1');
       commentElement.textContent = comment;
@@ -576,20 +426,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       commentElementBox.appendChild(profile.cloneNode(true))
       commentElementBox.appendChild(commentElement);
-      // commentElementBox.insertBefore(commentElement,profile.nextSibling)
 
-      // Append the new comment to the available-comments section
       availableComments.appendChild(commentElementBox);
-      // availableComments.appendChild(commentElement);
 
-      // Clear the input field after adding the comment
       inputField.value = '';
     } else {
       console.log('No comment to add.');
     }
   }
 
-  // Add event listeners
   cancelButton.addEventListener('click', clearComment);
   commentButton.addEventListener('click', addComment);
 
@@ -597,3 +442,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+let like = document.querySelector(".Like")
+let dislike = document.querySelector(".Dislike")
+
+
+like.addEventListener("click",()=>{
+    const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+    like.style.fill = textColor
+    dislike.style.fill = "none"
+})
+
+
+dislike.addEventListener("click",()=>{
+    const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+    dislike.style.fill = textColor
+    like.style.fill = "none"
+})
+
+let subscribe = document.querySelector(".subscribe")
+
+let isSubscribed = false;
+
+subscribe.addEventListener("click",()=>{
+  const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+  const share_like_background = getComputedStyle(document.documentElement).getPropertyValue('--share-like-background');
+  const subscribe_color = getComputedStyle(document.documentElement).getPropertyValue('--subscribe-color');
+  const background_color = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+  
+
+
+  if (!isSubscribed){
+    subscribe.style.backgroundColor = share_like_background
+    subscribe.style.color = textColor
+    subscribe.innerHTML = "Subscribed"
+    isSubscribed = true;
+  }
+  else{
+    subscribe.style.backgroundColor = subscribe_color
+    subscribe.style.color =  background_color
+    subscribe.innerHTML = "Subscribe"
+    isSubscribed = false;
+  }
+
+  // like.style.fill = "none"
+})
