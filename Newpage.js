@@ -445,18 +445,47 @@ document.addEventListener('DOMContentLoaded', function () {
 let like = document.querySelector(".Like")
 let dislike = document.querySelector(".Dislike")
 
+let isLike = false;
+let isDislike = false;
+
+
 
 like.addEventListener("click",()=>{
     const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-    like.style.fill = textColor
-    dislike.style.fill = "none"
+    if (!isLike){
+      like.style.fill = textColor
+      dislike.style.fill = "none"
+      isLike = true;
+      isDislike = false;
+    }
+    else{
+      like.style.color = textColor
+      like.style.fill = "none"
+      isLike = false;
+      // isDislike = true;
+
+    }
+
+
 })
 
 
 dislike.addEventListener("click",()=>{
     const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-    dislike.style.fill = textColor
-    like.style.fill = "none"
+    if (!isDislike){
+          dislike.style.fill = textColor
+          like.style.fill = "none"
+          isDislike = true;
+          isLike = false;
+    }
+    else{
+        dislike.style.color = textColor
+        dislike.style.fill = "none"
+        isDislike = false;
+        // isLike = "";
+
+    }
+
 })
 
 let subscribe = document.querySelector(".subscribe")
